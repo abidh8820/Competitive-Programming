@@ -1,0 +1,785 @@
+http://codeforces.com/contest/696/problem/D 8
+h11312 UVA (3)
+11392 UVA (4)
+http://codeforces.com/contest/653/problem/E (6)
+http://codeforces.com/contest/769/problem/C 5 //FL:ODD/**** | bfs+greed NICE
+10968 UVA (3) //EASY + NICE (bfs withot <=2 nodes)
+http://codeforces.com/contest/796/problem/D (3) //NICE+EASY ... print visited in bfs (not par)
+10888 UVA (4) //VERY NICE — but not main technique ... ++ DP /or/ MCMF
+http://codeforces.com/contest/821/problem/D (5) //VERY NICE — Consider only points not GRID
+http://www.spoj.com/problems/DIGOKEYS/ (4) //Easy [Nice problem — weird statement]
+http://www.spoj.com/problems/SPIKES/ (3) //Easy bfs (# of 's' * 2)
+http://www.spoj.com/problems/MULTII/ (4) //VERY NICE: BFS over numbers (K*10+d)%Nttp://www.spoj.com/problems/AHOCUR/ 5 //Aho-Corassic + DP
+10977 UVA (3)
+928 UVA (3)
+13116 UVA (4)
+314 UVA (3)
+11487 UVA (4)
+5622 LA (7)
+11931 UVA (5)
+http://www.spoj.com/problems/KNMOVE/ 3 //simple knights
+http://www.spoj.com/problems/SERGRID/ 3 //almost classical
+http://www.spoj.com/problems/NAKANJ/ 3 //Classical chess — KNIGHT
+http://www.spoj.com/problems/PUCMM223/ (4) //NICE (but not many languages) — 2 moving [x][y]
+http://www.spoj.com/problems/SPIRALGR/ (4) //NICE (not typical) [SIEVE]
+http://www.spoj.com/problems/DCEPC706/ (4) //NICE — travelling outside
+11645 UVA 4
+11375 UVA 3
+http://www.spoj.com/problems/MINNUM/ 3 // BIG/9+!!(BIG%9)
+10844 UVA 4 //Bell numbers + big (might be slightly slow!)
+http://www.spoj.com/problems/NITT2/ 2 //Divisibility by two constants
+http://codeforces.com/contest/729/problem/C 3
+http://codeforces.com/contest/714/problem/D 8
+13150 (UVA) 4
+http://codeforces.com/contest/749/problem/D 5
+11692 (UVA) 4
+11516 (UVA) 3
+http://codeforces.com/contest/760/problem/B 3
+http://codeforces.com/contest/675/problem/D 4 //dunno — solvable with treap
+http://www.spoj.com/problems/NDS/ 4 //BS over LIS
+http://www.spoj.com/problems/VECTAR4/ 3
+http://codeforces.com/contest/767/problem/D 4 //NICE
+http://codeforces.com/contest/627/problem/D (7) //with dp — NICE
+http://codeforces.com/contest/779/problem/D (3) //NICE + EASY
+http://www.spoj.com/problems/CNTINDX/ (4) //Map+BS === OK
+13177 UVA (3) //BS over answer == OK
+http://codeforces.com/contest/801/problem/C (3) //BS + SUM -EASY
+http://codeforces.com/contest/803/problem/D (3) //BS by answer
+http://codeforces.com/contest/807/problem/C (3) //Or math
+http://codeforces.com/contest/818/problem/F (4) //NICE — Live VS Clique
+http://codeforces.com/contest/845/problem/E (5) //VERY NICE — min(X,Y) .. add time, repeat
+http://www.spoj.com/problems/MATHLOVE/ (2) //BS + Gaus (or otter ways)
+http://www.spoj.com/problems/SABBIRGAME/ (3) //Binary search over answer ::max(0,ANS)
+http://codeforces.com/contest/846/problem/D (4) //BS+Precalculation OR 2D-RMQ
+11659 UVA (4)
+11535 UVA (4)
+http://codeforces.com/contest/779/problem/E (5) //NICE + Parsing
+http://www.spoj.com/problems/EC_CONB/ (1) //reverse numbers
+http://codeforces.com/contest/769/problem/D (4) //freq + brute-force
+http://www.spoj.com/problems/HAP01/ (2) //builtin_popcount
+http://codeforces.com/contest/754/problem/E 6
+http://www.spoj.com/problems/UCBINTC/ 5 //polymul with bitset
+http://codeforces.com/contest/732/problem/F 7
+http://codeforces.com/contest/700/problem/C 7
+http://www.spoj.com/problems/EC_P/ (3) //bridges ONLY
+http://www.spoj.com/problems/SUBMERGE/ (3) //Direct articulation
+http://www.spoj.com/problems/GRAFFDEF/ (5) //Bridge tree
+http://codeforces.com/contest/715/problem/C 9
+http://codeforces.com/contest/741/problem/D 8
+13164 UVA (7)
+http://codeforces.com/contest/752/problem/F 5
+http://codeforces.com/contest/766/problem/E 6
+http://codeforces.com/contest/833/problem/D 7 //Very nice — hard (thinking + imple) + FW
+http://codeforces.com/contest/741/problem/C 6
+11331 UVA (4)
+http://codeforces.com/contest/664/problem/D 4
+12001 UVA (3)
+12034 UVA (4)
+11719 UVA (5)
+11798 UVA (5)
+11282 UVA (4) //dearrangement
+11174 UVA (4)
+http://codeforces.com/contest/666/problem/C 7
+http://www.spoj.com/problems/JOKER1/ 3 prod(Ai-i)
+http://www.spoj.com/problems/ANTP/ //4
+http://codeforces.com/contest/645/problem/E (5) //formula: A[i]=Sum(A)+1
+http://www.spoj.com/problems/SPCE/ (5) // N^{K-2}*Prod(comp_size)
+http://codeforces.com/contest/785/problem/D (5) // F'(' C"(+)-1","("
+13184 UVA (3)
+http://codeforces.com/contest/816/problem/D (5) // Observation
+13214 (4) //OEIS? : C(N+M-2,N-1)
+http://codeforces.com/contest/844/problem/B (2) //Easy — pro prvaky
+http://www.spoj.com/problems/JOSWAP/ (3) //Frequence array
+http://www.spoj.com/problems/UCV2013E/ (4) //NICE&EASY: Choose steps to direction
+http://www.spoj.com/problems/PARCARD1/ (4) //Partition function (raw)
+http://www.spoj.com/problems/GOODB/ (2) //Easy (NICE): Choose [order]
+http://www.spoj.com/problems/LOOPEXP/ (4) //A000254/N!
+http://www.spoj.com/problems/DTPOLY/ (5) //DP might work too
+http://www.spoj.com/problems/DTPOLY2/ (7) //Harder version of above (NICE but hell)
+http://www.spoj.com/problems/HC12/ (3) //NICE — Sort + C(i,K-1)*A[i]
+http://www.spoj.com/problems/STONE2/ (4) //NICE — Mostly DP [INVERSION][FACTORIAL]
+http://codeforces.com/contest/802/problem/H (6) //We can do "N+k" by adding a letter p+k*x+u+xx
+12186 UVA (3)
+http://codeforces.com/contest/734/problem/E (5)
+http://codeforces.com/contest/727/problem/A (3)
+http://codeforces.com/contest/723/problem/E (6)
+http://codeforces.com/contest/709/problem/E (6)
+http://codeforces.com/contest/710/problem/E (4)
+http://codeforces.com/contest/758/problem/E (8)
+11323 UVA (5)
+http://codeforces.com/contest/760/problem/B (3)
+http://codeforces.com/contest/761/problem/E (6)
+http://codeforces.com/contest/638/problem/B (3) //connect cons. letters
+http://codeforces.com/contest/638/problem/C (4) //greedy idea — easy
+http://codeforces.com/contest/638/problem/D (5) //spec-DAG articulatin
+http://codeforces.com/contest/767/problem/C (4)
+http://codeforces.com/contest/781/problem/C (5)
+http://codeforces.com/contest/794/problem/D (5) //NICE! Right done dfs
+http://codeforces.com/contest/802/problem/K (5) //Slightly DP-like (NICE) TREE
+http://codeforces.com/contest/813/problem/C (3) //Simply 2 DFS: NICE + EASY
+http://codeforces.com/contest/841/problem/D (4) //DFS while tracking "next"
+http://codeforces.com/contest/845/problem/G (5) //Keep track of cycles
+http://codeforces.com/contest/844/problem/E (5) //Post-Order → line, Connect i → N-2: star
+http://www.spoj.com/problems/CAC/ (5) //VERY NICE! — Find all cycles in cactus
+http://codeforces.com/contest/849/problem/C (3) //State search by gauss
+http://codeforces.com/contest/846/problem/E (5) //NICE: DFS + some overflow logic
+http://www.spoj.com/problems/KOZE/ (3) //NICE: Floods
+http://www.spoj.com/problems/RIOI_2_3/ (4) //DFS /OR/ BFS /OR/ DSU [NICE][EASY][BF]
+http://www.spoj.com/problems/MAKEMAZE/ (3) //EASY — Simple dfs on grid
+http://www.spoj.com/problems/PR003004/ (4) //Simple digits count
+http://codeforces.com/contest/770/problem/B (3) //max num max digsum
+http://codeforces.com/contest/716/problem/D 7
+12047 UVA 4
+11514 UVA 4
+http://codeforces.com/contest/757/problem/F 7
+11338 UVA (4)
+11374 UVA (4)
+11097 UVA (4) //Divide to N*1000 nodes and go!
+13172 UVA (5) //6*DJ per query + permutations
+10816 UVA (4) //Easy Linear-Search by answer + DJ with path
+http://codeforces.com/contest/827/problem/F 7 //Very nice — Even&Odd
+http://codeforces.com/contest/817/problem/D (5) //Very nice NlogN
+11552 UVA (3)
+12172 UVA (3)
+4507 LA (5)
+4510 LA (5) [+ geometry]
+12181 UVA (6)
+http://codeforces.com/contest/729/problem/F 6
+http://codeforces.com/contest/735/problem/E 9
+http://codeforces.com/contest/731/problem/E 5
+12030 UVA (4)
+http://codeforces.com/contest/721/problem/E 7
+http://codeforces.com/contest/742/problem/D 4
+12040 UVA (5)
+http://codeforces.com/contest/712/problem/D 5
+13162 UVA (6)
+http://codeforces.com/contest/743/problem/E 6
+11908 UVA (3)
+11932 UVA (4)
+http://codeforces.com/contest/745/problem/E (7)
+11806 UVA (4)
+http://codeforces.com/contest/747/problem/F (5)
+11843 UVA (4)
+http://codeforces.com/contest/752/problem/E (5)
+http://codeforces.com/contest/703/problem/E (7)
+11753 UVA (4)
+11725 UVA (5)
+http://codeforces.com/contest/722/problem/E (9)
+http://codeforces.com/contest/760/problem/F (8)
+11795 UVA (3)
+11654 UVA (4)
+11523 UVA (5)
+11404 UVA (4)
+11432 UVA (4)
+11451 UVA (4) //C==20 mistake in statement
+11301 UVA (4)
+http://codeforces.com/contest/762/problem/D 5
+11361 UVA (4) //digit DP
+11365 UVA (7)
+11391 UVA (4) //easy+implementation
+11394 UVA (3)
+11218 UVA (2)
+11125 UVA (4) //slightly implementation
+11076 UVA (3)
+11081 UVA (4) //3 string subsequences (beware of fail)
+http://codeforces.com/contest/678/problem/E (5) //bitset dp + probability
+http://codeforces.com/contest/766/problem/C (4)
+http://codeforces.com/contest/667/problem/C (3)
+http://www.spoj.com/problems/MOVIFAN/ (3)
+http://www.spoj.com/problems/ORDSUM23/ (3)
+http://www.spoj.com/problems/DIVSEQ/ (4) //N^3 (but better...) works fine
+http://codeforces.com/contest/633/problem/F (7) //Tree dp
+http://www.spoj.com/problems/ADJDUCKS/ (4) sort + pick 2-3 continous O(N)
+http://www.spoj.com/problems/JLNT/ (4) //pick 0 or 2 | 1e3*5e3
+http://www.spoj.com/problems/TPCPALIN/ (5) //500^3 works (3rd countable)
+http://www.spoj.com/problems/COLORSEG/ (4) //50^4==OK 50^4log(N)=TLE NICE
+http://www.spoj.com/problems/POWERCAR/ (3) //1e3*1e3*2 — follow rules
+http://www.spoj.com/problems/INGRED/ (5) //TSP-like [reduce + go]
+http://www.spoj.com/problems/BADXOR/ (4) //classical subsets
+http://www.spoj.com/problems/SPCO/ (5) //64*64*2 DP {OPT: prime O(1) + clear only half}
+http://www.spoj.com/problems/WAYHOME/ (5) //NICE: 1) 1*1 b)12,1,**,2
+http://www.spoj.com/problems/NFURY/ (2) //Minimal sum of squares
+http://www.spoj.com/problems/GDIL/ (3) //combinatorics
+http://codeforces.com/contest/791/problem/D (5) //Tree
+http://codeforces.com/contest/791/problem/E (6) //V,K,X — pick any
+http://codeforces.com/contest/789/problem/C (3)
+13176 (4) //N^6
+13179 (5) //NICE [Ath][Bth][TimeDiff]
+http://codeforces.com/contest/796/problem/E (6) //NICE: N*P*K*K (WC can't happen!)
+http://codeforces.com/contest/797/problem/E (4) //NICE: Almost BF-able (but care of low K)
+http://codeforces.com/contest/793/problem/D (3) //NICE & EASY: begin/end/actual/USED
+http://codeforces.com/contest/803/problem/E (4) //State search — many IF's (EASY)
+http://codeforces.com/contest/805/problem/F (7) //NICE: DP on tree + fast BF + hack
+http://codeforces.com/contest/808/problem/E (5) //NICE!
+http://codeforces.com/contest/811/problem/C (4) //Precalculate + DP (greedy thinking)
+10817 UVA 4 //Easy but slightly implementation
+10859 UVA 4 //Nice — on tree .. but for a reason small constrains
+10898 UVA 4 //Hash is lesser than 1e6 .. try everything
+http://codeforces.com/contest/812/problem/B (3) //Not only DP, yet imho easiest ..many spec cases
+http://codeforces.com/contest/813/problem/D (5) //VERY VERY NICE — N*N (none picked between a/b)
+http://codeforces.com/contest/814/problem/E 5 //VERY NICE — Harder imple: Combinatorics
+http://codeforces.com/problemset/problem/816/E (6) //NICE — Tree (hard 2C complexity)
+http://codeforces.com/contest/837/problem/D (5) //NICE — yet kinda pain [must be iterative]
+http://www.spoj.com/problems/AUT/ (4) //NICE — K is interesting ~ at most 1600
+http://www.spoj.com/problems/GNYR04C/ (3) //Easy — Nice idea [Big→ Low approach]
+http://www.spoj.com/problems/TIEROPE/ (4) //Process 2*L ~ otherwise pick BIG
+http://www.spoj.com/problems/IITKWPCE/ (4) //Palindromes [efficiency!] — NICE!
+IITKWPCD SPOJ (4) //+Slightly geometry
+http://www.spoj.com/problems/LKS/ (3) //Classical knapsack
+http://www.spoj.com/problems/UOFTAE/ (3) //Easy & Sympatic DP
+http://www.spoj.com/problems/DCOWS/ (4) //Very NICE (sort + GO)
+http://www.spoj.com/problems/FARIDA/ (3) //Easy & Sympatic ((u+1) | Price+(u+2))
+http://www.spoj.com/problems/AU7_5/ (2) //EASY: dyn(n-1)+dyn(n-k-1)
+http://www.spoj.com/problems/NAIVELOK/ (4) //NICE [depalindromisation]
+http://codeforces.com/contest/846/problem/C (4) //With print
+http://www.spoj.com/problems/CNT_LUCK/ (4) //Number (binary) dp [NICE] {ull care 0-1}
+http://www.spoj.com/problems/MAY99_4/ (3) //Almost combinatoric Sub and 0/1,1/0
+http://www.spoj.com/problems/GEEKOUNT/ (4) //Number dp
+http://www.spoj.com/problems/MUTDNA/ (4) // N*2 (turned?) [not sure if grd poss.]
+http://www.spoj.com/problems/RIOI_3_2/ (5) //VERY NICE (easy imple — Number Theory thinking)
+http://www.spoj.com/problems/MAXWOODS/ (3) //NICE [EASY][GRID]
+http://www.spoj.com/problems/DIEHARD/ (3) //Easy — prolly solvable by greedy (but dp is easier)
+http://www.spoj.com/problems/DCEPC810/ (4) //VERY VERY NICE — Subsequence 2pointers+2bools
+http://www.spoj.com/problems/EQ2/ (4) //NICE: Digit + Carry (from back) — iff-party
+http://codeforces.com/contest/723/problem/F 7
+13153 UVA (5)
+13169 UVA (3)
+11987 UVA (3)
+11474 UVA (4)
+http://codeforces.com/contest/687/problem/D 6
+http://codeforces.com/contest/680/problem/E 7 //+precalculation/brute force
+http://codeforces.com/contest/766/problem/D 5
+http://www.spoj.com/problems/LEXSTR/ (3) //Nice na stringu
+http://codeforces.com/contest/805/problem/C 3 //NICE (dijkstra like :P)
+http://www.spoj.com/problems/IITKWPCI/ (3) //VERY NICE
+http://www.spoj.com/problems/FRNDCIRC (3) //Classical DSU (NICE for practice)
+http://www.spoj.com/problems/FOXLINGS/ (3) Easy — just renumbering
+http://www.spoj.com/problems/NITTROAD/ (4) //Process from back
+http://www.spoj.com/problems/SHAHBG/ (2) //DSU not needes (simulated by array)
+http://www.spoj.com/problems/NAJPWG/ 4 //Gauss-Euler
+http://www.spoj.com/problems/DCEPC12G/ (5) //Do what is written there
+http://www.spoj.com/problems/INVPHI/ (5) //Inverse euler
+http://codeforces.com/contest/789/problem/D //Adj EG + Self/everything
+http://codeforces.com/contest/747/problem/C 3
+12005 UVA (7)
+12062 UVA (6)
+11960 UVA (3)
+http://www.spoj.com/problems/FACTCG2/ (3)
+http://www.spoj.com/problems/FACT0/ (4)
+http://codeforces.com/contest/546/problem/D 5
+http://codeforces.com/contest/222/problem/C 6
+http://www.spoj.com/problems/COMDIV/ 3
+http://www.spoj.com/problems/SINEGGS/ 3
+http://www.spoj.com/problems/BDOI16B/ 4
+http://www.spoj.com/problems/HG/ 4 //Map == OK
+11099 UVA (3) //factor + recursion
+13194 UVA (3) //factorize+generate /or just check
+13191 UVA (6) //Pollard-Rho
+http://codeforces.com/contest/818/problem/E (4) // Efficient + Two Pointers
+http://codeforces.com/contest/831/problem/F (6) //MAGIC
+http://codeforces.com/contest/839/problem/D (4) // Combinatorics + IE
+http://www.spoj.com/problems/SAS002/ (5) //Find all divisors (big numbers)
+http://www.spoj.com/problems/GCDS/ (4) //Lowest unused prime
+http://www.spoj.com/problems/IITKWPCF/ (4) //Nonprime divisors of N/2
+http://codeforces.com/contest/851/problem/D (4) //Properties of GCD + factor: NICE
+http://www.spoj.com/problems/PTIME/ (3) //Low bounds — check each prime independently
+11776 UVA (3)
+11134 UVA (3)
+http://codeforces.com/contest/707/problem/E 7 [2D]
+http://codeforces.com/contest/749/problem/E 8
+http://codeforces.com/problemset/gymProblem/101055/D 5 [2D]
+11240 UVA (4)
+http://codeforces.com/contest/669/problem/E 5 //fenwicks — sparse
+http://codeforces.com/contest/777/problem/E 4 //MAXIMUM
+http://www.spoj.com/problems/TULIPNUM/ 4 //inc — 1 nor+num|sum(A[B],A[E])
+http://codeforces.com/contest/799/problem/C 3 //MAX FW (but possibly easier?)
+http://codeforces.com/contest/831/problem/E 4 //MAP to get ORDER — FW == LIST
+http://www.spoj.com/problems/SAS001/ (4) //Nice — number of inversions + 2P
+http://www.spoj.com/problems/TPGA/ (4) //NICE — Lesser*(N-i-1)!
+http://www.spoj.com/problems/SGIFT/ (4) //BS works too
+http://www.spoj.com/problems/SUMSUM/ (5) //Bit-by-Bit cnt 0/1
+http://www.spoj.com/problems/AKVQLD03/ (3) //Classical fenwick — easy
+http://www.spoj.com/problems/ZIGZAG2/ (6) //Very nice — FW + BS + DP
+http://codeforces.com/contest/849/problem/E (7) //2D Fenwick / ST+TP [NICE]
+http://www.spoj.com/problems/CRAYON/ (5) //VERY NICE [2*FW — begin + end]
+http://www.spoj.com/problems/NITT8/ (4) //Norm. + Store indices in MAX-Fenwick [REVERSE] [VERY NICE]
+http://www.spoj.com/problems/DCEPC705/ (4) //NICE! Sort + Fenwick
+http://www.spoj.com/problems/TSUM/ 5
+13182 UVA 5 //ACTG hamming
+http://codeforces.com/contest/827/problem/E (8) //MAGIC
+http://www.spoj.com/problems/FASTFLOW/ 3 //simple flow
+13211 UVA (5) //NICE — FW adding states
+http://www.spoj.com/problems/ROHAAN/ (3) //Classical
+http://codeforces.com/contest/808/problem/F 6 //NICE — nontrivial (max matching with bigger flows)
+11859 UVA 4
+11863 UVA 4
+11892 UVA 3 //Probably solved by many
+11534 UVA 5
+http://www.spoj.com/problems/VECTAR11/ 4 //Nsqrt(N) passes [with break]
+http://codeforces.com/contest/768/problem/E (4) //NICE — Grundy
+http://www.spoj.com/problems/SYNC13C/ (4) //2*DP {maybe not seeing sth}
+http://codeforces.com/contest/787/problem/C (4)
+http://codeforces.com/contest/794/problem/C (3) //Find optimal strategy: choose back/front
+http://codeforces.com/contest/794/problem/E (5) //NICE Find stategy: Even/Odd
+http://codeforces.com/contest/812/problem/E (7) //Advanced NIM strategy
+http://www.spoj.com/problems/GAMEMVS/ (4) //Nimbers (Ai^X)<=Ai
+http://www.spoj.com/problems/PLAYGAME/ (3) //Check pattern
+http://www.spoj.com/problems/CHAOS_CC/ (4) //VERY NICE [nimbers]
+http://codeforces.com/contest/851/problem/E (5) //Very nice [nimbers] [bitset]
+http://www.spoj.com/problems/CHGROOM/ (4) //+Factorisation [NICE & Easy]: Win unless 2 prime factors
+12173 UVA 3
+12194 UVA 4
+11894 UVA 3
+11769 UVA 7
+11665 UVA 5
+11509 UVA 4
+11355 UVA 5
+11265 UVA 6 //Nice one | polygon — cut/pt-check/area
+11123 UVA 4 //Counting trapezoids
+11177 UVA 6 //BS+Polygon/Circle intersection
+11186 UVA 3
+11008 UVA 5 //with DP → #intersected triangles
+11012 UVA 5 //Nejvzdálenější body (Manhatton 3D)
+11072 UVA 4 //Body v poly gonu
+http://codeforces.com/problemset/problem/682/E 6 (biggest triangle)
+http://codeforces.com/contest/672/problem/C 4 //easy — just think it up
+http://codeforces.com/contest/667/problem/A 2 //vzorecky
+http://codeforces.com/contest/793/problem/C 5 //EASY but beware of epsilons (NICE)
+http://codeforces.com/contest/794/problem/B 2 //Can be done with BS
+http://codeforces.com/contest/814/problem/D 5 //+DP on trees (NICE — but low geom.)
+10750 UVA 3 //Closest points — try all pairs
+http://codeforces.com/contest/820/problem/B 3 //Polygon angle find!
+13213 UVA 5 //VERY NICE — Voronoi diagram (low constraints so not actually needed)
+13215 UVA 3 //EASY — Sum areas and find side lengths
+http://www.spoj.com/problems/IITKWPCC/ (5) //VERY VERY NICE — Nqrt(N)log(N)
+http://www.spoj.com/problems/NNS/ (5) Closest points query [fake geometry] {__128}
+http://codeforces.com/contest/849/problem/B (3) //X-Product — side
+http://www.spoj.com/problems/AMR12C/ (5) //Point closest to all other points (with speed)
+http://codeforces.com/contest/27/problem/D (5)
+11387 (UVA) 4
+http://www.spoj.com/problems/VFRIEND2/ (5) //Graph possible check
+http://codeforces.com/contest/729/problem/D 3
+http://codeforces.com/contest/729/problem/E 4
+http://codeforces.com/contest/725/problem/D 4
+http://codeforces.com/contest/725/problem/F 9
+http://codeforces.com/contest/732/problem/E 5
+http://codeforces.com/contest/727/problem/F 6
+http://codeforces.com/contest/724/problem/D 5
+http://codeforces.com/contest/723/problem/C 4
+http://codeforces.com/contest/719/problem/B 2
+http://codeforces.com/contest/712/problem/C 3
+13152 UVA (4)
+http://codeforces.com/contest/746/problem/E 5
+http://codeforces.com/contest/746/problem/D 3
+http://codeforces.com/contest/749/problem/C 3
+11737 UVA (3)
+11786 UVA (4)
+11630 UVA (5)
+11563 UVA (4)
+11491 UVA (4)
+11330 UVA (3)
+11089 UVA (2)
+http://www.spoj.com/problems/SQRMINSUM/ 3 //solve-able in O(N+M)-arrayqueue
+http://www.spoj.com/problems/MSCHED/ 3 //sweep from back
+http://www.spoj.com/status/ns=18780683 4 //all perm + A<B<C works
+http://www.spoj.com/problems/NINJA7/ (3) //sort by diff
+http://www.spoj.com/problems/NINJA2/ (4) //try all possib. (26)
+http://codeforces.com/contest/767/problem/E (6)
+http://codeforces.com/contest/637/problem/B (3) //NICE pro prvaky
+http://codeforces.com/contest/777/problem/B (3) // -||-
+http://codeforces.com/contest/777/problem/D (3) //just go from end
+http://codeforces.com/contest/779/problem/C (3) //NICE pro prváky
+http://www.spoj.com/problems/SPCU/ (2) //Easy — zamysleni (max int = index)
+http://www.spoj.com/problems/LOPOV/ (4) //sort + queue (or just queue) NICE
+http://codeforces.com/contest/792/problem/E (5) //T%S<=T/S + check proper
+http://codeforces.com/contest/807/problem/E (5) //NICE — put asice P2 / rest — greedy from small
+http://codeforces.com/contest/799/problem/E (5) //Many queues — but NICE
+http://codeforces.com/contest/808/problem/C (3) //EASY
+http://codeforces.com/contest/802/problem/B (4) //Priority by "next"
+10850 UVA (4) //Queue a brute-force
+http://codeforces.com/contest/813/problem/A (1) //Zahrivacka pro prvaky
+10716 UVA (4) //NICE — always find closest pair
+http://codeforces.com/contest/816/problem/C (3) //NICE — greater<lesser side
+http://codeforces.com/contest/820/problem/D (5) //VERY NICE — O(N) -~- 5 events per number
+http://codeforces.com/contest/818/problem/B (2) //Zahrivacka pro prvaky
+http://codeforces.com/contest/822/problem/C (4) //Almost classical Sort+Queue
+http://codeforces.com/contest/825/problem/C (2) //Nice & Easy
+http://codeforces.com/contest/825/problem/D (3) //Update by modulo
+http://codeforces.com/contest/835/problem/B (2) // Zahhrivacka pro prvaky
+http://codeforces.com/contest/839/problem/B (3) //Nasty iffs — yet nice excersize
+http://www.spoj.com/problems/PCPC12I/ (4) //Swipe MINIMUM from left/right [10^6-A[i] trick]
+http://www.spoj.com/problems/AMR12I/ (3) //NICE a) MAX_SEG>=K b) (SEG_SIZE-1)/K+1
+http://www.spoj.com/problems/BUSYMAN/ (2) //NICE&EASY — Sort + keep minimum
+12012 UVA 4
+http://codeforces.com/contest/727/problem/E 7
+http://codeforces.com/contest/718/problem/D 8
+11855 UVA 4
+http://codeforces.com/contest/752/problem/D 5
+http://codeforces.com/contest/825/problem/F 5 //String + Periods
+http://codeforces.com/contest/835/problem/D 4 //Palindromes
+11852 UVA (6)
+http://www.spoj.com/problems/KLUG1/ (2) //Jumps of horse
+http://www.spoj.com/problems/KPRIMESB/ (4)
+http://www.spoj.com/problems/IITKWPCH/ (4) //NICE — on bits
+http://www.spoj.com/problems/SUBSET/ (5) //VERY NICE — 3^10 (^2 but not exactly) (+ sorting)
+http://codeforces.com/contest/727/problem/C (2)
+http://codeforces.com/contest/810/problem/D (4) //BS * 3 (same)
+http://codeforces.com/contest/811/problem/D (4) //BFS — easy .. some ifs
+http://codeforces.com/contest/835/problem/E (4) //NICE! Bitsets + Detect + XOR
+http://codeforces.com/contest/844/problem/D (5) //NICE! Randomized algo
+11351 UVA (2)
+http://www.spoj.com/problems/CLSLDR/ (4) //Muchas queries — go DP
+http://www.spoj.com/problems/NAJPF/ (4) //classical kmp — all patterns
+http://codeforces.com/contest/808/problem/G (6) //with DP -harder
+http://codeforces.com/contest/733/problem/F 7
+11354 UVA (4)
+http://www.spoj.com/problems/POLICEMEN/ (3) //simple + small graph
+http://www.spoj.com/problems/QTREE2/ (5) //very easy if bin. understrood
+http://codeforces.com/contest/828/problem/F 7 // Differently MST / Outside
+http://codeforces.com/contest/832/problem/D (5) //Classical + Depth /OR/ HLD +ST
+http://www.spoj.com/problems/DRTREE/ (5) //NICE [finding ancestor + depths]
+http://codeforces.com/problemset/problem/838/B (6) //VERY NICE [HLD + ET + ST]
+http://www.spoj.com/problems/NTICKETS/ (4) //Maximum on path
+http://www.spoj.com/problems/GRASSPLA/ (5) //HLD
+10949 UVA (6) — Hunt or Bit
+http://www.spoj.com/problems/MC/ (3) //Classical
+http://www.spoj.com/status/ns=20097091 (4) //Permutation
+http://www.spoj.com/problems/LCS0/ (7) //Bit
+http://www.spoj.com/problems/ALTSEQ/ 3 //solvable by FW in Nlog(N)
+http://www.spoj.com/problems/VISIBLEBOX/ (4) //with multiset
+http://www.spoj.com/problems/DOSA/ (5)
+http://www.spoj.com/problems/CODERE3/ 3 //Low bounds LIS/LDS
+http://www.spoj.com/problems/BRDGHRD/ 4 //lis (nondecreasing)
+http://codeforces.com/contest/727/problem/D 4
+11985 UVA (5)
+http://www.spoj.com/problems/AMR12A/ (5) //VERY NICE goophers + bonus
+http://www.spoj.com/problems/NITT4/ (4) //VERY NICE [Chessboard matching]
+12045 UVA (4)
+11551 UVA (4)
+11486 UVA (5)
+10743 UVA (5) //A001169 [easy multi / hard to come with recurence]
+http://codeforces.com/contest/821/problem/E (6) //Not trivial to come-up with matrix
+http://www.spoj.com/problems/DCEPCA06/ (4) //NICE — 10x10 matrix
+http://www.spoj.com/problems/GSWORDS/ (3) //NICE&EASY — 3-states "OO,OX,XO"
+11613 UVA (6)
+http://codeforces.com/contest/802/problem/C (8) //Nice but hard to see + negative
+http://codeforces.com/contest/802/problem/N (5) //Easy but faster MCMF needed
+http://codeforces.com/contest/818/problem/G (6) //NICE + MUCH Faster MCMF
+http://www.spoj.com/problems/BNMT/ (7) //VERY NICE (some optimalisations needed + weird data set)
+http://codeforces.com/contest/713/problem/C 7
+http://www.spoj.com/problems/RMID2/ 4
+http://www.spoj.com/problems/RMID/ 3 (as above just not so dynamic)
+http://www.spoj.com/problems/EC_ESTA/ 4 //classical dynamic median
+http://www.spoj.com/problems/DCEPCA09/ (6) //VERY NICE [MO +++ MEDIAN, MEAN, FREQ]
+11851 UVA (5)
+11465 UVA (5)
+13207 UVA (4) //Straight-forward MIM
+http://www.spoj.com/problems/COLOR_CC/ (4) //VERY NICE — div by partity (take lesser) → 8^6
+http://www.spoj.com/problems/COT/ (7) //ON TREE [but very tight TLE]
+http://www.spoj.com/problems/GOT/ (5) //ON TREE
+http://www.spoj.com/problems/CPAIR2/ (4) //MO + Fenwick [VERY NICE]
+12192 UVA 5
+http://codeforces.com/contest/729/problem/B 2
+http://codeforces.com/contest/710/problem/C 4
+11871 UVA 6
+11617 UVA (3)
+11573 UVA (4)
+11499 UVA (5)
+11230 UVA (4)
+http://codeforces.com/contest/731/problem/F 4
+12031 UVA (8)
+http://codeforces.com/contest/722/problem/F (8)
+http://codeforces.com/contest/716/problem/C 4
+http://codeforces.com/contest/711/problem/E (8)
+http://codeforces.com/contest/710/problem/D (6)
+13154 (UVA) 7
+13166 (UVA) 5
+11962 (UVA) 2
+11718 UVA 3
+11510 UVA (5)
+11538 UVA (3) //good one — just math
+11556 UVA (1)
+http://codeforces.com/contest/757/problem/E (8)
+http://codeforces.com/contest/758/problem/F (7)
+11481 UVA (4)
+11237 UVA (4) //Nice — seems like knapsbag but it it not
+11155 UVA (4) //Almost as previous problem
+11038 UVA (3) //counting digits on interval
+http://codeforces.com/contest/763/problem/C (7)
+11087 UVA (4) //Sums of two numbers divisible with <=500 (10^5)
+http://codeforces.com/contest/678/problem/C 2 //LCM
+http://codeforces.com/problemset/problem/665/F (8) //p^3 | p*q
+http://www.spoj.com/problems/LCMSUM/ //Vzorec v knihovničce
+http://www.spoj.com/problems/FRNDZND/ (2) // (size 1 == 1, else 0)
+http://www.spoj.com/problems/EXPOR/ //bit-by-bit (+ formula)
+http://www.spoj.com/problems/FACTDIV/ (5) //dyn-update of ans/factors GOOD
+http://www.spoj.com/problems/PAIRDIV/ (6) //cyka möbius -_-
+http://www.spoj.com/problems/FCDC/ (4) //keep factorized factorial
+http://www.spoj.com/problems/NTHPRIME/ (7) // BS + NumPrime GOOD!!
+http://www.spoj.com/problems/DIVFACT3/ (7) // Sieve 10^8 + sqrt search
+http://www.spoj.com/problems/DIVFACT4/ (8) // Prime count
+http://codeforces.com/contest/776/problem/C (4) //segments div. by number
+http://codeforces.com/contest/776/problem/E (6) //vypsat cisla: f(N)=Phi(N),g(N)=N
+http://www.spoj.com/problems/PHT/ (2) //easy BS (NN+2N) mby math?
+http://www.spoj.com/problems/GCDEX/ (7) //OEIS A006579 — enough [well imp]
+http://www.spoj.com/problems/APS/ (3) //just sieve + generate
+http://www.spoj.com/problems/WPC5I/ (3)//fc: C[a]!=C[b]:F[a]^max(C[a],C[b])
+http://www.spoj.com/problems/SPEC_SET/ N→N/k→N/k/k
+http://www.spoj.com/problems/DCEPC11B/ (5) //Wilson't theorem!
+http://www.spoj.com/problems/FACTMULN/ (5) //each f[i]/c[i] separately
+http://www.spoj.com/problems/SPCM/ (4) //just factorisation + prime check (10^12)
+http://www.spoj.com/problems/TWOGAME/ (5) //gcd == Power of 3 => YES
+http://www.spoj.com/problems/MKEQUAL/ (2) //Chceck if sum is divisible by N
+http://www.spoj.com/problems/TIPTOP/ (3) //sqrt(N)==N? NICE!!
+http://www.spoj.com/problems/PSYCHON/ (4) // fast factorisation
+http://www.spoj.com/problems/ENIGMATH/ (1) // swap and div by gcd
+http://www.spoj.com/problems/SNGPG/ (3) // prime gen + check
+http://codeforces.com/contest/795/problem/A (2) //brute-force
+http://codeforces.com/contest/801/problem/E (6) //NICE! — Clique-DAG + inversion
+http://codeforces.com/contest/798/problem/C (4) //GCD == at the beginning OR 2
+http://codeforces.com/contest/803/problem/C (3) //Only "low" K and just divisors
+10830 (4) //simple add 2→ sqrt(N) + their mirrors
+http://codeforces.com/contest/817/problem/A (2) //check division + parity
+13209 UVA (3) //Simple simulation of division (+states rememberance)
+http://codeforces.com/contest/834/problem/C (4) //Has cube-root + both num divisible by cuberoot
+http://codeforces.com/contest/837/problem/E (5) //Factorisation + GCD attributes
+http://www.spoj.com/problems/SUMMATION/ (3) //Number contribution: 2^(N-1)
+http://www.spoj.com/problems/SECTORS/ (4) //Odd len OR sum of odd indices == sum of even
+http://www.spoj.com/problems/IITKWPCM/ (6) //VERY NICE — Gauss's generalisation of Wilsons Theorem
+http://www.spoj.com/problems/UCV2013A/ (4) //N*(N^L-1)/(N-1)
+http://www.spoj.com/problems/KIMO1/ (4) //NICE — Adding/Subing by modulus
+http://www.spoj.com/problems/AFS2/ (4) //Sum of divisort (sqrt(N)) — (+128int)
+http://www.spoj.com/problems/FUNNUMS/ (4) //Permutations (get ith + guess ith)
+http://www.spoj.com/problems/MAY99_3/ (3) //GCD
+http://www.spoj.com/problems/PUCMM334/ (3) //Classical hats problem
+http://www.spoj.com/problems/LCPC11B/ (4) //Factorize + count all subsets
+http://www.spoj.com/problems/THREENUMBERS/ (2) //EASY & NICE [lcm]
+http://www.spoj.com/problems/GAMES/ (2) //EASY&NICE — Go discrete (by 10^k) → 10^k/GCD
+http://www.spoj.com/problems/SUBSHARD/ (4) //dig*10^sufix*(choose sufix)*^Prefix [VERY NICE]
+http://www.spoj.com/problems/INVDIV/ (6) //Sum of divisors function + factorisation [NICE]
+http://www.spoj.com/problems/JNEXT/ (2) //EASY — Zahřívačka pro prváky
+12004 UVA 2
+11273 UVA 5 //https://oeis.org/A001088
+11077 UVA 3 //https://oeis.org/A094638
+http://www.spoj.com/problems/VECTAR5/ 3 //https://oeis.org/A038721
+http://www.spoj.com/problems/ESYRCRTN/ 2 //generate and see
+http://www.spoj.com/problems/IITWPC4B/ 3 //http://oeis.org/A005044
+http://www.spoj.com/problems/POLCONST/ (4) //A003401+Fermat Number (Prime)
+http://www.spoj.com/problems/CUTCAKE/ (3) // pattern [1 22 333 4444 55555]
+10872 UVA 3 //Alcuin's Sequence
+http://www.spoj.com/problems/LOVINGPW/ (3) //A000788
+http://www.spoj.com/problems/CBANK/ (3) //A000292 Tetrahedral numbers
+http://www.spoj.com/problems/GUMATH2/ (4) //A000240 Modulo by MOD*2
+http://www.spoj.com/problems/MATHII/ (4) //A006218 (Two formulas => sqrt(N))
+1266 UVA (6) //slightly knapsack || moc hezka
+http://codeforces.com/contest/761/problem/F (7)
+http://www.spoj.com/problems/UPDATEIT/ (2) //basic method
+13189 UVA (4) //simulation + sort queries
+http://www.spoj.com/problems/MSUBSTR/ (4) //Simple manacher (or other)
+11019 UVA (5)
+http://codeforces.com/contest/844/problem/C 3 //NICE Permutations in array
+http://codeforces.com/contest/813/problem/E (6) //Easy but hard data structure
+http://www.spoj.com/problems/ETF/ 3
+http://www.spoj.com/problems/TIP1/ (4) //Phi + perms
+http://www.spoj.com/problems/DCEPCA03/ (3) //Phi + Reduce cycles: P*PrevixP*2-P^2
+http://www.spoj.com/problems/PUCMMT02/ (7) //wrong bounds- but ll OK
+11029 UVA (3)
+http://codeforces.com/contest/777/problem/C (4) //NICE
+http://codeforces.com/contest/818/problem/C (4) //Prefix Sum
+http://codeforces.com/contest/834/problem/B (2) //26 queries — NICE rozehrivacka pro prvaky
+http://www.spoj.com/problems/RANGESUM/ (4) //NICE: Offline (delta) + Prefix Sum
+http://www.spoj.com/problems/RANDG/ (3) //NICE [but too low bounds] [PrefixSum] [Try all indexes]
+http://www.spoj.com/problems/HARSHAD/ (3) //Sieve + simple function
+http://www.spoj.com/problems/PUCMM210/ (3) //Number theory (thinking not necessary)
+http://www.spoj.com/problems/ABA12A/ (3)
+10871 UVA (3) //Easy — fermat not necessary
+http://www.spoj.com/problems/POP1/ (4) //Fast primality testing (or somehow)
+http://www.spoj.com/problems/POP2/ (5) //NICE — same as above (yet with ll)
+http://www.spoj.com/problems/POP3/ (6) //same as above (yet with big)
+13190 UVA (2) //just priority queue
+11762 UVA (5)
+11427 UVA (5)
+11348 UVA (2)
+http://codeforces.com/contest/768/problem/D (4) //With DP
+http://www.spoj.com/problems/IITWPC4J/ (4) //with DP
+10828 UVA (5) //Nice problem but bad statemend: Expected value of visits MC
+10777 UVA (4) //NICE — yet solvable with DP
+http://codeforces.com/contest/839/problem/C (3) //NICE & Easy => Tree
+http://www.spoj.com/problems/ZCR/ (3) //Easy (+DP)
+http://www.spoj.com/problems/IITKWPCN/ (2) //Easy — Odd/Eve (black balls)
+http://codeforces.com/contest/846/problem/F (5) // Expected number of unique elements
+http://www.spoj.com/problems/GOC11A/ 4
+13170 UVA (7) //heavy implementation — but NICE!
+10854 UVA (3) //if/else
+http://codeforces.com/contest/713/problem/D 6
+http://codeforces.com/contest/675/problem/E 5
+http://www.spoj.com/problems/POSTERIN/ 5 //VERY NICE — Delete all minimas
+http://www.spoj.com/problems/RPLN/ (3) //RMQ only
+http://www.spoj.com/problems/CITY2/ (4) //RMQ + MAP [NICE][VAGUE STATEMENT]
+http://www.spoj.com/problems/AROPE/ 4
+http://www.spoj.com/problems/AROPE2/ 5 //same as above (+time)
+http://www.spoj.com/problems/TFRIENDS/ (4) //just scc size
+http://codeforces.com/contest/739/problem/C (8)
+http://codeforces.com/contest/718/problem/C (8)
+http://codeforces.com/contest/750/problem/E (7)
+http://codeforces.com/contest/759/problem/C (7)
+11165 UVA (5)
+http://codeforces.com/contest/763/problem/E (8) //VERY NICE — [non-trivial]
+http://www.spoj.com/problems/BGSHOOT/ (5) //normalize — then easy
+http://www.spoj.com/problems/KGSS/ (4)
+http://codeforces.com/contest/765/problem/F (7) //VERY NICE — CASCADE
+http://www.spoj.com/problems/GSS1/ (5) //Idea — then easy
+http://www.spoj.com/problems/KQUERYO/ (5) //Seg-tree of vectors
+http://codeforces.com/contest/633/problem/G (8) //EulerTree+Seg+Bitset
+http://www.spoj.com/problems/NAJ0001/ (7) //10^8 int — memory (and worked)
+http://www.spoj.com/problems/PRMQUER/ (5) //2 segment trees + sieve
+http://www.spoj.com/problems/EC_DIVS/ (5) //dunno if intended
+http://www.spoj.com/problems/DCEPC11I/ (5) //NICE — 1,2,3,4,5,.. inc
+http://www.spoj.com/problems/QUE2/ (4) //kth number
+http://codeforces.com/contest/785/problem/E (6) //Seg+Treap [and faster]
+http://codeforces.com/contest/786/problem/B (6) //+Dijkstra
+13183 UVA (6) //Merge-Sort-Tree [dunno]
+http://codeforces.com/contest/803/problem/G (5) //VERY NICE!! — ST 10^9 + ST/RMQ 10^5
+http://codeforces.com/contest/794/problem/F (7) //Digit by digit! (N*log(N)*100 )
+http://codeforces.com/contest/811/problem/E (6) //VERY NICE — DSU (easier Timofey + animals)
+http://codeforces.com/contest/817/problem/F (7) //10^18 + MEX ~~ NICE yet problematic
+http://codeforces.com/contest/816/problem/B (3) //Or offline trick makes it easier
+http://codeforces.com/contest/834/problem/D (5) //+Dynamic Programming | NICE
+http://www.spoj.com/problems/SBO/ (5) //preLast→ last (-1), last→ now (+1) — VERY NICE
+http://www.spoj.com/problems/GOODE/ (5) //NICE: Inversion + L-Mex
+http://www.spoj.com/problems/CNTPRIME/ (3) //ST+Sieve (short range)
+http://www.spoj.com/problems/SEGSQRSS/ (4) //NICE {weak data} ~~ SQRT works too
+11885 UVA 7 //Previous problem requested for statement
+11522 UVA 3 //Trick — low numbers only :P
+11610 UVA (5)
+11353 UVA (3)
+http://www.spoj.com/problems/TDPRIMES/ (4)
+http://www.spoj.com/problems/VECTAR8/ (3)
+http://www.spoj.com/problems/NFACTOR/ (4)
+http://www.spoj.com/problems/HS08PAUL/ (4) //simply generate
+http://codeforces.com/contest/776/problem/B (3) //Easy — trict: PM-1/ELSE-2
+http://www.spoj.com/problems/GGD/ (4) // N/lowestDiv*(lowestDiv-1)
+http://codeforces.com/contest/822/problem/D (4) //DP + Lowest factor
+http://www.spoj.com/problems/NGIRL/ (4) //Squares — Primes + BS == Easiest
+http://www.spoj.com/problems/PTRI/ (5) //Very fast sieve necessary:/
+http://www.spoj.com/problems/AFS/ (3) //Sum of divisort + DP
+http://www.spoj.com/problems/BSPRIME/ (4) //Very fast sieve needed
+12187 UVA (2)
+http://codeforces.com/contest/724/problem/C 5
+http://codeforces.com/contest/746/problem/C 3
+11093 UVA (2)
+http://codeforces.com/contest/768/problem/C (4)
+http://www.spoj.com/problems/WRONG/ (5) //VERY NICE — precalculate from back, then go from front
+12189 UVA (3)
+12196 UVA (4)
+http://codeforces.com/contest/731/problem/D 7
+11925 UVA (4)
+11979 UVA (3)
+http://codeforces.com/contest/747/problem/D (4)
+11890 UVA (4)
+http://www.spoj.com/problems/KAOS/ (4) //pocet inverzí — GOOD problem!!!!
+http://www.spoj.com/problems/KSMALL/ (5) //fast sort /or/ quick-select
+http://www.spoj.com/problems/RKS/ (3) //use map
+http://www.spoj.com/problems/SPCJ/ (4) //reverse + go from back
+http://codeforces.com/contest/785/problem/B (2) //last-first + vice versa
+http://codeforces.com/contest/798/problem/D (4) //Take 1st then take best B of every pair (sort by A)
+http://codeforces.com/contest/810/problem/B (2)
+http://codeforces.com/contest/810/problem/C (3) //+Math
+http://codeforces.com/contest/814/problem/A (1) //Pro prváky — but nice observation
+http://codeforces.com/contest/817/problem/B (3) //Frequency of TOP 3
+10769 UVA (3) //Sadly N^4 passes
+13208 UVA (4) //Sort + Prefix Sum
+13212 UVA (3) //Number of inversions
+http://codeforces.com/contest/831/problem/C (3) //NICE ~ Check all "add" against first
+http://codeforces.com/contest/831/problem/D (4) //Can be solved with BS+Max-Match
+http://codeforces.com/contest/841/problem/C (3) //NICE — match greatest to lowest
+http://codeforces.com/contest/845/problem/C (2) //EASY — pro prvaky
+http://www.spoj.com/problems/HSHW/ (4) //Test every big/low pair + big/big low/low on +/-
+BLINNET SPOJ (3)
+11183 UVA (4) //Directed [need to know algo!]
+http://www.spoj.com/problems/ULM09/ (3) //Sum-Kruskal
+http://www.spoj.com/problems/IITKWPCG/ (4) //VERY NICE [log instead of price]
+11478 UVA (5)
+12003 UVA 7
+11990 UVA (5)
+http://www.spoj.com/problems/GIVEAWAY/ (7) //SQRT + BS > [or Seg+Trie]
+http://codeforces.com/contest/786/problem/C (5) //Nsqrn (bg) + sqrSegs (end)
+http://codeforces.com/contest/840/problem/D (5) //NICE — Either frequent OR brute-force
+http://codeforces.com/contest/799/problem/B (2) //EASY — MAP
+http://codeforces.com/contest/808/problem/D (3) //MAP
+10887 (2) //string + map
+10730 (3) //Easy with hash-map
+http://codeforces.com/contest/821/problem/C (3) //STACK (vector) Nice+Easy
+http://www.spoj.com/problems/SOLVEIT/ (3) //Set + lower_bound
+http://www.spoj.com/problems/IITKWPCA/ (2) //Set + getline
+http://codeforces.com/contest/849/problem/D (5) //Queue
+http://www.spoj.com/problems/CRAN02/ (4) //Map (+Math)
+http://www.spoj.com/problems/MAX_NUM/ (4) //Queue (possibly multiple ways)
+http://www.spoj.com/problems/SID/ (5) //Sort + Vector (or similar) [strict TLE]
+http://codeforces.com/contest/762/problem/C 5
+http://www.spoj.com/problems/LCS0/ 10 //LCS
+http://www.spoj.com/problems/IITWPC4H/ 2 //Frequence array
+http://www.spoj.com/problems/ANAGR/ 2 //frequency + palindromes
+13186 UVA (6) //Bitset + Trie ~ NICE [6-7 mby?]
+http://codeforces.com/contest/798/problem/B (2) //Brute-force .. pro prváky
+10745 UVA (4) //Frequency (N^2 possible if efficient!!)
+http://codeforces.com/contest/822/problem/B (2) //Easy pro prvaky (slightly imple.)
+http://codeforces.com/contest/828/problem/C (4) //+Sorting (process only necessary!)
+http://codeforces.com/contest/832/problem/B (3) //Naive compare back+front [+freq]
+http://www.spoj.com/problems/STC04/ (5) //Next + pairs O(N*26) [frist look O(26^2*N)]
+http://www.spoj.com/problems/IITKWPCJ/ (4) //GCD or HASHING
+http://www.spoj.com/problems/SUBSN/ (4) //Next (NICE — bad input):
+http://www.spoj.com/problems/AMR12D/ (1) //Palindrome check //Zahrivacka pro prvaky
+http://www.spoj.com/problems/BOGGLE/ (2) //EASY [MAP][STREAM]
+12191 UVA 5
+SARRAY SPOJ 3
+4513 LA 6
+http://www.spoj.com/problems/LCS2/ 7 // must be linear (SA+LCP+MQ)
+http://codeforces.com/contest/802/problem/I 7 //NICE! SA+LCP+(Segmentree/queue)
+12048 UVA (5)
+12197 UVA (4)
+http://codeforces.com/contest/765/problem/E 5
+http://codeforces.com/contest/770/problem/C 4 //reduce + toposort
+http://codeforces.com/contest/825/problem/E 4 //Toposort from biggest/backward
+http://codeforces.com/contest/762/problem/E 6
+http://www.spoj.com/problems/COUNT1IT/ 5
+http://www.spoj.com/problems/IITWPC4D/ 4 //From end — pick i-th + del i-th
+http://www.spoj.com/problems/ALLIN1/ 4 //Typical treap operations
+http://codeforces.com/contest/746/problem/G 5
+http://codeforces.com/contest/750/problem/F 9
+http://www.spoj.com/problems/RTREE/ 3 //longest path tree — query
+13175 UVA (2) //something like preorder build
+http://codeforces.com/contest/796/problem/C (3) //Just counting — inc by at most 2
+http://codeforces.com/contest/797/problem/D (4) //VERY NICE — sort + D&C all
+http://codeforces.com/contest/805/problem/E (4) //NICE — Treewidth coloring (greedy)
+http://codeforces.com/contest/828/problem/D (3) //Star construction
+http://www.spoj.com/problems/TREEDEGREE/ (3) //Degree from euler tree
+http://www.spoj.com/problems/UCV2013J/ (3) //Find what is leaf in Binary Tree
+http://codeforces.com/contest/714/problem/C 5
+http://www.spoj.com/problems/SUBXOR/ (4)
+http://codeforces.com/contest/817/problem/E (5) //Classical — remember sum! NICE!
+11732 UVA (5)
+11539 UVA (5)
+11488 UVA (4)
+http://www.spoj.com/problems/TRYCOMP/ (4)
+10860 UVA (4) //DP + Trie [nice — slightly generic]
+10937 UVA (4) //find '!' / BFS / TSP — NICE!
+10944 UVA (4)
+10818 UVA (5) //Easy — but not-easy implementation: ++Dijkstra [LEX!]
+http://www.spoj.com/problems/A_W_S_N/ (4) //BFS + TSP (path) — NICE
+http://codeforces.com/contest/746/problem/F 6
+11436 UVA (5)
+http://codeforces.com/contest/760/problem/D 4
+11386 UVA (4)
+http://www.spoj.com/problems/WOWSUBSTR2/ 3
+http://www.spoj.com/problems/ARRAYSUB/ 4
+http://www.spoj.com/problems/CODFURY/ 3 //easy — ukazkove
+http://codeforces.com/contest/769/problem/B 3 //sort + TP
+http://codeforces.com/contest/814/problem/C 4 //NICE — maybe some DP +/-
+http://www.spoj.com/problems/CRAN04/ 4 //NICE — (more or less) 3 pointers
+http://www.spoj.com/problems/OPCPIZZA/ 3 //NICE [EASY] [AGAINS EACH OTHER]
+http://www.spoj.com/problems/SUFEQPRE/ 4
+12174 UVA (4)
+http://www.spoj.com/problems/LCPC12F/ (2) //EASY — Little number theory
+11930 UVA (4)
+http://codeforces.com/contest/776/problem/D (5)
