@@ -35,5 +35,31 @@ LL ncr(LL n, LL r) {
 }
 ```
 
-```
+## Matrix Exponentiation
 
+```cpp
+#include "bits/stdc++.h"
+using namespace std;
+ 
+const int M = 1e9 + 7;
+ 
+struct Mat {
+    long long a[2][2] = {{0, 0}, {0, 0}};
+    Mat operator*(const Mat& other) {
+        Mat res;
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++)
+                for (int k = 0; k < 2; k++) {
+                    res.a[i][k] = (res.a[i][k] + (a[i][j] * other.a[j][k]))%M;
+                }
+        return res;
+    }
+};
+ 
+Mat bm(Mat a, long long p) {
+    if (p == 1) return a;
+    if (p & 1) return a * (bm(a, p - 1));
+    Mat tepm = bm(a, p / 2);
+    return (tepm * tepm);
+}
+```
