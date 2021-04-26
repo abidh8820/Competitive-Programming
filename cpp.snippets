@@ -68,7 +68,6 @@ endsnippet
 snippet LL
 typedef long long LL;
 endsnippet
-
 snippet matexpo
 struct Mat {
 	long long a[2][2] = {{0, 0}, {0, 0}};
@@ -91,6 +90,36 @@ Mat bm(Mat a, long long p) {
 }
 endsnippet
 
+snippet prefixfunc
+int prefixFunction(const string& s) {
+	int n = s.size();
+	vector<int> pi(n);
+	for (int i = 1; i < n; i++) {
+		int j = pi[i - 1];
+		while (j > 0 && s[j] != s[i]) j = pi[j - 1];
+		if (s[j] == s[i]) j++;
+		pi[i] = j;
+	}
+	return pi[n-1];
+}
+endsnippet
+
+
+snippet sieve
+const int N = 1e6+7;
+
+bool flag[N];
+vector<int> primes;
+
+void sieve() {
+	for(int i=2; i<N; i++){
+		if(!flag[i]){
+			for(int j=2*i; j<N; j+=i) flag[j] = 1;
+			primes.push_back(i);
+		}
+	}
+}
+endsnippet
 ###########################################################################
 #                            TextMate Snippets                            #
 ###########################################################################
