@@ -114,7 +114,7 @@ int find(int u) {
 	if (u==par[u])  return u;
 	return par[u] = find(par[u]);
 }
-int merge(int u, int v) {
+void merge(int u, int v) {
 	par[find(u)] = find(v);
 }
 endsnippet
