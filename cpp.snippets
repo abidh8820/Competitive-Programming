@@ -36,6 +36,10 @@ while(t--){
 }
 endsnippet
 
+snippet pii
+typedef pair<int,int> pii;
+endsnippet
+
 snippet segtree
 
 
@@ -119,8 +123,20 @@ snippet LL
 typedef long long LL;
 endsnippet
 snippet matexpo
+const int N = 1e6 + 7;
+const int M = 1e9 + 7;
+
+
+
+
 struct Mat {
-	long long a[2][2] = {{0, 0}, {0, 0}};
+	long long a[2][2];
+	Mat() {
+		for (int i = 0; i < 2; i++)
+		for (int j = 0; j < 2; j++) a[i][j] = 0;
+	}
+	Mat(int x) { a[0][0] = a[1][1] = 1; }
+
 	Mat operator*(const Mat& other) {
 		Mat res;
 		for (int i = 0; i < 2; i++)
@@ -133,6 +149,7 @@ struct Mat {
 };
 
 Mat bm(Mat a, long long p) {
+	if(p==0) return Mat(1);
 	if (p == 1) return a;
 	if (p & 1) return a * (bm(a, p - 1));
 	Mat tepm = bm(a, p / 2);
