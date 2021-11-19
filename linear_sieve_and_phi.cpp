@@ -6,7 +6,7 @@ const int N = 5e6 + 1;
 int phi[N];
 bool composite[N];
 
-void totient() {
+void sieve() {
     phi[1] = 1; vector<int> primes;
     for (int i = 2; i < N; i++) {
         if (!composite[i]) {
