@@ -244,7 +244,7 @@ struct Segment {
 	Segment(Point<T> a_, Point<T> b_) { a = a_, b = b_; }
 
 	friend bool parallel(Segment A, Segment B) { return cross(A.b - A.a, B.b - B.a) == 0; }
-	friend bool colinear(Segment A, Segment B) { return cross(B.a - A.a, A.b - A.a) == 0; }
+	friend bool colinear(Segment A, Segment B) { return cross(B.a - A.a, A.b - A.a) == 0; } // not really coliear, got to check
 
 	friend bool intersect(Segment A, Segment B) {
 		Point<T> p1 = A.a, p2 = A.b, p3 = B.a, p4 = B.b;
