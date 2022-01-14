@@ -130,34 +130,38 @@ typedef long long LL;
 endsnippet
 
 snippet matexpo
-const int N = 1e6 + 7;
 const int M = 1e9 + 7;
+typedef long long LL;
+int n, m, K;
 
 struct Mat {
-	long long a[2][2];
-	Mat() {
-		for (int i = 0; i < 2; i++)
-		for (int j = 0; j < 2; j++) a[i][j] = 0;
-	}
-	Mat(int x) { a[0][0] = a[1][1] = 1; }
+    bool a[55][55];
+    Mat() { memset(a, 0, sizeof a);}
 
-	Mat operator*(const Mat& other) {
-		Mat res;
-		for (int i = 0; i < 2; i++)
-			for (int j = 0; j < 2; j++)
-				for (int k = 0; k < 2; k++) {
-					res.a[i][k] = (res.a[i][k] + (a[i][j] * other.a[j][k]))%M;
-			}
-		return res;
-	}
+    Mat(int x) {
+        memset(a, 0, sizeof a);
+        for (int i = 1; i <= n; i++) a[i][i] = 1;
+    }
+
+    Mat operator*(const Mat& b) {
+        Mat ret;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                for (int k = 1; k <= n; k++) {
+                    ret.a[i][k] = (ret.a[i][k] + (a[i][j] * b.a[j][k]));
+                }
+            }
+        }
+        return ret;
+    }
 };
 
-Mat bm(Mat a, long long p) {
-	if(p==0) return Mat(1);
-	if (p == 1) return a;
-	if (p & 1) return a * (bm(a, p - 1));
-	Mat tepm = bm(a, p / 2);
-	return (tepm * tepm);
+Mat bm(Mat a, LL p) {
+    if (p == 0) return Mat(1);
+    if (p == 1) return a;
+    if (p & 1) return a * bm(a, p - 1);
+    Mat temp = bm(a, p / 2);
+    return temp * temp;
 }
 endsnippet
 
