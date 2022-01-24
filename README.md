@@ -1,2 +1,1 @@
-
-##Templates and resources on competitive programming
+## Templates and resources on competitive programming
