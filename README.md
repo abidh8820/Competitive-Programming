@@ -4,3 +4,8 @@
 - Geometry
 - String hashing
 - combinatorics
+- LCA
+- Matrix exponentiation
+- HLD
+- Bridge tree
+- Linear sieve for and phi
