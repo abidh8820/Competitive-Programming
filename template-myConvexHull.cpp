@@ -31,7 +31,8 @@ int sgn(const long long& x) { return x >= 0 ? x ? 1 : 0 : -1; }
 
 void ConvexHull(vector<Point> &points, vector<Point> &hull) {
     sort(points.begin(), points.end());
-      p.erase(unique(p.begin(), p.end()), p.end());
+    points.erase(unique(points.begin(), points.end()), points.end());
+
 
     hull.push_back(points[0]);
     hull.push_back(points[1]);
