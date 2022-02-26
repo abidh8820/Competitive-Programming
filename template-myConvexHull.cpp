@@ -11,10 +11,9 @@ struct Point {
     Point operator*(const long long u) const { return Point(x * u, y * u); }
     Point operator*(const double u) const { return Point(x * u, y * u); }
     Point operator/(const double u) const { return Point(x / u, y / u); }
+    bool operator<(Point &c) { return make_pair(x, y) < make_pair(c.x, c.y); }
+    bool operator==(Point c) { return x == c.x && y == c.y; }
 
-    bool operator < (Point& c) {
-        return make_pair(x,y) < make_pair(c.x, c.y);
-    }
     
     friend T dot(Point a, Point b) { return a.x * b.x + a.y * b.y; }
     friend T cross(Point a, Point b) { return a.x * b.y - a.y * b.x; }
@@ -29,22 +28,16 @@ struct Point {
 long long Area(Point a, Point b, Point c) { return cross(b - a, b - c); }
 int sgn(const long long& x) { return x >= 0 ? x ? 1 : 0 : -1; }
 
-void ConvexHull(vector<Point> &points, vector<Point> &hull) {
-    sort(points.begin(), points.end());
-    points.erase(unique(points.begin(), points.end()), points.end());
-
-
+void ConvexHull(vector<Point> &points,vector<Point> &hull) {  // unique sorted poins, empty hull
     hull.push_back(points[0]);
     hull.push_back(points[1]);
-
     for (int rep = 0; rep < 2; rep++) {
-        int k = (rep==0?2 : 1);
+        int k = (rep == 0 ? 2 : 1);
         for (int i = k; i < points.size(); i++) {
             while (hull.size() >= 2) {
-                Point A = hull.end()[-2];
-                Point B = hull.end()[-1];
-                Point C = points[i];
-                if (Area(A, B, C) >= 0) break;
+                Point A = hull.end()[-2], B = hull.end()[-1], C = points[i];
+                if (A == C) break;
+                if ( A== C || Area(A, B, C) >= 0)break;  // remove the = to remove redundant points
                 hull.pop_back();
             }
             hull.push_back(points[i]);
