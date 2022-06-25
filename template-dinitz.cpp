@@ -15,11 +15,13 @@ struct Dinic {
     int n, m = 0, s, t;
     vector<int> lvl, ptr;
     queue<int> q;
-
+    
+    // number of nodes, source, sink
     Dinic(int n, int s, int t) : n(n), s(s), t(t) {
         adj.resize(n + 100), lvl.resize(n + 100), ptr.resize(n + 100);
     }
-
+    
+    //directed edge 
     void add_edge(int v, int u, long long cap) {
         edg.emplace_back(v, u, cap);
         edg.emplace_back(u, v, 0);
