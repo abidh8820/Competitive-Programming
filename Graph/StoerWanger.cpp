@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* for finding the min cut of a graph without specifing the source or  the sink.
-   all the edges are directed and no need to give  make any edge bidirectional.
+/* for finding the min cut of a graph without specifing the source and  the sink.
+   all the edges are directed and no need to  make any edge bidirectional.
 */
 
 const int N = 1407;
