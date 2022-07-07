@@ -4,17 +4,14 @@ using namespace std;
 const int N = 1e6 + 7;
 const int S = 450;
 
-
-long long a[N], ans[N], cur;
+int long a[N], cnt[N];
+long long ans[N], cur;
 
 void remove(int id) {
-// remove index id from ans
 }
 
 void add(int id) {
-// add index id to ans
 }
-
 
 struct Query {
     int l, r, id;
@@ -24,22 +21,19 @@ struct Query {
 };
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
 
-    int q;
-    cin >> q;
-    
-    //taking queries and sorting them
+    int n, q;
+    scanf("%d %d", &n, &q);
+
+    for(int i=1; i<=n; i++) scanf("%d",&a[i]);
+
     vector<Query> Q(q);
     for(int i=0; i<q; i++) {
-        cin >> Q[i].l>> Q[i].r;
-        Q[i].l--;
-        Q[i].id = i+1;
+        scanf("%d %d", &Q[i].l, &Q[i].r);
+        Q[i].id = i;
     }
-
     sort(Q.begin(), Q.end());
-
+    
     int l = 1, r = 0;
     for (int i = 0; i < q; i++) {
         while (l > Q[i].l) add(--l);
@@ -48,5 +42,5 @@ int main() {
         while (r > Q[i].r) remove(r--);
         ans[Q[i].id] = cur;
     }
-    for(int i=1; i<=q; i++) cout<<ans[i]<<endl;
+    for(int i=0; i<q; i++) printf("%lld\n", ans[i]);
 }
