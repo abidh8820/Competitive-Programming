@@ -27,14 +27,11 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    
-    
     int q;
     cin >> q;
     
+    //taking queries and sorting them
     vector<Query> Q(q);
-
-    int cnt = 0;
     for(int i=0; i<q; i++) {
         cin >> Q[i].l>> Q[i].r;
         Q[i].l--;
