@@ -25,6 +25,12 @@ void pre() {
     for(int i=sz-1; i>=0; i--) st[preorder[i]] = i;
 }
 
+/*
+ **For subtree queries :st[u] to en[u] for subtree of u
+   
+ ** For Path queries :
+*/
+
 void remove(int id) {
 }
 
