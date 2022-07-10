@@ -69,5 +69,5 @@ struct Dinic {
 };
 /*
  **directed edge from v  to u (not u to v)
- ** to find macthincg edges go over all edges that does where s!=u || s !=v || t!=u || t!=v and find flow of 1 
+ ** to find matching edges go over all edges  where s!=u && s !=v && t!=u && t!=v and find flow of 1 
 */
