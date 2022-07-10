@@ -21,7 +21,7 @@ struct Dinic {
         adj.resize(n + 100), lvl.resize(n + 100), ptr.resize(n + 100);
     }
     
-    //directed edge 
+    //directed edge from v  to u (not u to v)
     void add_edge(int v, int u, long long cap) {
         edg.emplace_back(v, u, cap);
         edg.emplace_back(u, v, 0);
@@ -67,3 +67,6 @@ struct Dinic {
         return f;
     }
 };
+
+
+// to find macthincg edges go over all edges that does where s!=u || s !=v || t!=u || t!=v and find flow of 1 
