@@ -5,9 +5,14 @@ using namespace std;
 typedef long long LL;
 const int N = 1 << 18;
 
-LL tree[N * 4], prob[N * 4], a[N];
+LL tree[N * 4], lazy[N * 4], a[N];
+
+LL combine(LL u, LL v){
+    return u + v;
+}
 
 void build(int u, int l, int r) {
+    lazy[u] = 0;
     if (l == r) {
         tree[u] = a[l];  return;
     }
@@ -17,31 +22,34 @@ void build(int u, int l, int r) {
     tree[u] = min(tree[u * 2], tree[u * 2 + 1]);
 }
 
+//for max, min query just add lazy * 1;
 void propagate(int u,int l, int r) {
     int mid = (l+r)/2;
-    prob[u * 2] += prob[u];
-    tree[u * 2] += prob[u]*(mid-l+1);
-    prob[u * 2 + 1] += prob[u];
-    tree[u * 2 + 1] += prob[u]*(r-mid);
-    prob[u] = 0;
+    lazy[u * 2] += lazy[u];
+    tree[u * 2] += lazy[u]*(mid-l+1);   
+    lazy[u * 2 + 1] += lazy[u];
+    tree[u * 2 + 1] += lazy[u]*(r-mid);
+    lazy[u] = 0;
 }
 
 void update(int u, int l, int r, int i, int j, int val) {
     if (r < i || l > j) return;
     if (l >= i && r <= j) {
-        prob[u] += val; tree[u] += val;  return;
+        // for max, min query just add lazy * 1;
+        lazy[u] += val; tree[u] += val*(r-l+1);  return;
     }
 
     propagate(u,l,r);int mid = (l + r) / 2;
     update(u * 2, l, mid, i, j, val);
     update(u * 2 + 1, mid + 1, r, i, j, val);
-    tree[u] = tree[u * 2]+ tree[u * 2 + 1];
+    tree[u] = combine(tree[u * 2], tree[u * 2 + 1]);
 }
 
 LL query(int u, int l, int r, int i, int j) {
     if (l > j || r < i) return 0;
     if (l >= i && r <= j) return tree[u];
     propagate(u,l,r);   int mid = (l + r) / 2;
-    return (query(u * 2, l, mid, i, j)+ query(u * 2 + 1, mid + 1, r, i, j));
-}
+    return combine(query(u * 2, l, mid, i, j), query(u * 2 + 1, mid + 1, r, i, j));
+} 
+
 
