@@ -11,45 +11,47 @@ LL combine(LL u, LL v){
     return u + v;
 }
 
-void build(int u, int l, int r) {
+void build(int u, int st, int en) {
     lazy[u] = 0;
-    if (l == r) {
-        tree[u] = a[l];  return;
+    if (st == en) {
+        tree[u] = a[st];  return;
     }
-    int mid = (l + r) / 2;
-    build(u * 2, l, mid);
-    build(u * 2 + 1, mid + 1, r);
-    tree[u] = min(tree[u * 2], tree[u * 2 + 1]);
-}
-
-//for max, min query just add lazy * 1;
-void propagate(int u,int l, int r) {
-    int mid = (l+r)/2;
-    lazy[u * 2] += lazy[u];
-    tree[u * 2] += lazy[u]*(mid-l+1);   
-    lazy[u * 2 + 1] += lazy[u];
-    tree[u * 2 + 1] += lazy[u]*(r-mid);
-    lazy[u] = 0;
-}
-
-void update(int u, int l, int r, int i, int j, int val) {
-    if (r < i || l > j) return;
-    if (l >= i && r <= j) {
-        // for max, min query just add lazy * 1;
-        lazy[u] += val; tree[u] += val*(r-l+1);  return;
-    }
-
-    propagate(u,l,r);int mid = (l + r) / 2;
-    update(u * 2, l, mid, i, j, val);
-    update(u * 2 + 1, mid + 1, r, i, j, val);
+    int mid = (st + en) / 2;
+    build(u * 2, st, mid);
+    build(u * 2 + 1, mid + 1, en);
     tree[u] = combine(tree[u * 2], tree[u * 2 + 1]);
 }
 
-LL query(int u, int l, int r, int i, int j) {
-    if (l > j || r < i) return 0;
-    if (l >= i && r <= j) return tree[u];
-    propagate(u,l,r);   int mid = (l + r) / 2;
-    return combine(query(u * 2, l, mid, i, j), query(u * 2 + 1, mid + 1, r, i, j));
+//for max, min query just add lazy * 1;
+void propagate(int u,int st, int en) {
+    int mid = (st+en)/2;
+    lazy[u * 2] += lazy[u];
+    tree[u * 2] += lazy[u]*(mid-st+1);   
+    lazy[u * 2 + 1] += lazy[u];
+    tree[u * 2 + 1] += lazy[u]*(en-mid);
+    lazy[u] = 0;
+}
+
+void update(int u, int st, int en, int i, int j, int val) {
+    if (en < i || st> j) return;
+    if (st >= i && en <= j) {
+        // for max, min query just add lazy * 1;
+        lazy[u] += val; tree[u] += val*(en-st+1);  return;
+    }
+    propagate(u,st,en);
+    int mid = (st + en) / 2;
+
+    update(u * 2, st, mid, i, j, val);
+    update(u * 2 + 1, mid + 1, en, i, j, val);
+    tree[u] = combine(tree[u * 2], tree[u * 2 + 1]);
+}
+
+LL query(int u, int st, int en, int i, int j) {
+    if (st > j || en < i) return 0; // return appropriate identity value
+    if (st >= i && en <= j) return tree[u];
+    propagate(u,st,en);
+    int mid = (st + en) / 2;
+    return combine(query(u * 2, st, mid, i, j), query(u * 2 + 1, mid + 1, en, i, j));
 } 
 
 
