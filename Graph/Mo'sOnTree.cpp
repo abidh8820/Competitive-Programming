@@ -28,7 +28,9 @@ void pre() {
 /*
  **For subtree queries :st[u] to en[u] for subtree of u
    
- ** For Path queries :
+ ** For Path queries : 
+    case-1: lca(u,v) == u , [ST(u),ST(v)]
+    case-2: otherws, [EN(u),ST(v)]+[ST(lca), ST (lca)
 */
 
 void remove(int id) {
