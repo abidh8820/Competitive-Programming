@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//***yet to test after change
 
 typedef long long LL;
 const int N = 1 << 18;
@@ -12,7 +12,7 @@ LL combine(LL u, LL v){
 }
 
 void build(int u, int st, int en) {
-    lazy[u] = 0;
+    lazy[u] = -1; // place appropriate initial value for lazy
     if (st == en) {
         tree[u] = a[st];  return;
     }
@@ -24,12 +24,13 @@ void build(int u, int st, int en) {
 
 //for max, min query just add lazy * 1;
 void propagate(int u,int st, int en) {
+    if(lazy[u]==-1) return;
     int mid = (st+en)/2;
     lazy[u * 2] += lazy[u];
     tree[u * 2] += lazy[u]*(mid-st+1);   
     lazy[u * 2 + 1] += lazy[u];
     tree[u * 2 + 1] += lazy[u]*(en-mid);
-    lazy[u] = 0;
+    lazy[u] = -1; // place appropriate initial value
 }
 
 void update(int u, int st, int en, int i, int j, int val) {
@@ -38,7 +39,7 @@ void update(int u, int st, int en, int i, int j, int val) {
         // for max, min query just add lazy * 1;
         lazy[u] += val; tree[u] += val*(en-st+1);  return;
     }
-    propagate(u,st,en);
+    propagate(u,st,en); 
     int mid = (st + en) / 2;
 
     update(u * 2, st, mid, i, j, val);
