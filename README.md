@@ -1,3 +1,3 @@
-#todo
-#rewrite prefixautomaton
-#test segtree
+# Todo
+#### Rewrite prefixautomaton
+#### Test segtree
