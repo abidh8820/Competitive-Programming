@@ -5,6 +5,8 @@
     Suffix Array Construction: O(NlogN)
     LCP Array Construction: O(NlogN)
     Suffix LCP: O(logN)
+
+ ** Must run PRE();
 **/
 
 #include <bits/stdc++.h>
