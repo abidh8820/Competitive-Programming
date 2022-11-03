@@ -126,6 +126,7 @@ struct RMQ {
         N = a.size();
         v[0] = a;
 
+        if(lg[2]==0) pre();
         for (int k = 0; (1 << (k + 1)) <= N; k++) {
             v[k + 1].resize(N);
             for (int i = 0; i - 1 + (1 << (k + 1)) < N; i++) {

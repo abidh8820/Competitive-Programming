@@ -1,29 +1,14 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
-long long phi(long long n) {
-    long long result = n;
-    for (long long i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            while (n % i == 0) n /= i;
-            result -= result / i;
-        }
-    }
-    if (n > 1) result -= result / n;
-    return result;
-}
+const int N = 1e6 + 7;
 
-int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+long long phi[N];
 
-    int t;
-    cin >> t;
-
-    while (t--) {
-        long long a, m;
-        cin >> a >> m;
-
-        cout << phi(m / gcd(a, m)) << endl;
+void sieve() {
+    for (int i = 0; i < N; i++) phi[i] = i;
+    for (int i = 2; i < N; i++) {
+        if (phi[i] != i) continue;
+        for (int j = i; j < N; j += i) phi[j] -= phi[j] / i;
     }
 }

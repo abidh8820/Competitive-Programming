@@ -23,6 +23,7 @@ typedef long long LL;
 typedef pair<LL, LL> PLL;
 
 namespace Hashing {
+
 #define ff first
 #define ss second
 
