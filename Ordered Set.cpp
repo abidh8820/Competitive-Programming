@@ -9,6 +9,8 @@ tree < int, null_type ,less<int>,
 rb_tree_tag,
 tree_order_statistics_node_update > ordered_set;
 
+gp_hash_table<int,int> table;
+
 /*
     Operations :
     find_by_order : returns an iterator to the k-th
@@ -24,7 +26,6 @@ ordered_set Set;
 
 
 int main() {
-
     Set.insert(5);
     Set.insert(2);
     Set.insert(6);

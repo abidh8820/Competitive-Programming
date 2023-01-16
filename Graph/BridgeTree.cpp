@@ -1,4 +1,5 @@
-
+#include <bits/stdc++.h>
+using namespace std;
 struct BridgeTree {
     vector<int> adj[N], tree[N];
     vector<pii> bridges; bool vis[N];
