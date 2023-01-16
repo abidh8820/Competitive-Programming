@@ -1,3 +1,10 @@
+/* 
+ * Merge Sort Tree
+ * Build in O(nlong)
+ * Finding number of elements in a range <= val in O(log^2n)
+ * finding the kth value in a range in O(log^3n)
+*/  
+
 #include <bits/stdc++.h>
 using namespace std;
 
