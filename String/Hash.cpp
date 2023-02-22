@@ -1,20 +1,16 @@
 /**+
 Simple Library for String Hashing, Uses Double Hash.
 Hash(abc........z) = a*p^n + b*p^(n-1) + ...... + z
-
 In order to convert to Single Hash -
     o Delete operator overloads and fix reduce()
     o Replace all PLL with LL
     o Change mp pairs to appropriate value
 Or set M2 = 1, which should be nearly as fast.
-
 Some Primes:
 1000000007, 1000000009, 1000000861, 1000099999      ( < 2^30 )
 1088888881, 1111211111, 1500000001, 1481481481      ( < 2^31 )
 2147483647 (2^31-1),
-
 Author: anachor
-
 **/
 
 #include <bits/stdc++.h>
