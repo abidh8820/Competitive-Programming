@@ -3,11 +3,11 @@
  * Query -> O(logn)
  * Memory -> O(nlogn)
  **/
-
 #include <bits/stdc++.h>
 using namespace std;
 
-const int N = 1e6 + 7;
+using LL = long long ;
+const int N = 4e6 + 7;
 
 struct Node {
     int l = 0, r = 0, val = 0;
@@ -68,7 +68,7 @@ int main() {
 
     map<int, int> mp;
     int n, q;
-    cin >> n >> q;
+    cin >> n;
 
     for (int i = 1; i <= n; i++) cin >> a[i], mp[a[i]];
     int c = 0;
@@ -80,11 +80,41 @@ int main() {
         root[i] = update(root[i - 1], 1, n, mp[a[i]], 1);
     }
 
+    cin >> q;
     while (q--) {
-        int l, r, k;
+        LL l, r, k;
         cin >> l >> r >> k;
 
-        int res = query(root[l - 1], root[r], 1, n, k);
-        cout<<V[res]<<endl;
+        LL gg = query(root[l - 1], root[r], 1,n, r-l+1 );
+        LL val = V[gg];
+        LL rem = val-(r-l+1);
+
+        if(rem<k) {
+            cout<<k-rem+val<<"\n";
+            continue;
+        }
+
+        int lo = 1, hi = r-l+1, res = r-l+1;
+        while(lo<=hi){
+            int mid = (lo+hi)>>1;
+            int idx = query(root[l-1], root[r] , 1, n, mid);
+            int VAL = V[idx];
+            int need = VAL-mid;
+            if(need>=k){
+                res = mid, hi = mid -1;
+            }
+            else lo = mid + 1;
+        }
+
+        if(res==1){
+            cout<<k<<"\n";
+            continue;
+        }
+        else {
+           LL gg = query(root[l-1], root[r], 1, n, res-1); 
+           LL val =  V[gg];
+           LL rem = val - (res-1);
+           cout<<k-rem+val<<"\n";
+        }
     }
 }
