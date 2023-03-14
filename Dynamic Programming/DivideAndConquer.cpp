@@ -1,3 +1,8 @@
+/*
+* Divide and Conquer Optimization
+* Must satisfy : Opt(i,j) <= Opt(i,j+1)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
