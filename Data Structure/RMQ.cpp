@@ -20,7 +20,7 @@ struct RMQ {
         for (int k = 0; (1 << (k + 1)) <= N; k++) {
             v[k + 1].resize(N);
             for (int i = 0; i - 1 + (1 << (k + 1)) < N; i++) {
-                v[k + 1][i] = min(v[k][i], v[k][i + (1 << k)]);
+                v[k + 1][i] = gcd(v[k][i], v[k][i + (1 << k)]);
             }
         }
     }

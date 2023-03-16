@@ -1,63 +1,64 @@
+/*
+* It could be a forest rather than a single tree. 
+* The 'tree' holds the edges bridge trees' 
+* 'ptr' = the number of new nodes in the bridge tree 
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
-struct BridgeTree {
-    vector<int> adj[N], tree[N];
-    vector<pii> bridges; bool vis[N];
-    int Time = 0, n, m, dt[N], low[N], col[N];
 
-    BridgeTree(int x, int y) {
-        n = x, m = y;
-        for (int i = 0; i < N; i++) vis[i] = dt[i] = col[i] = low[i] = 0;
-    }
+const int N = 1e6 + 7;
 
-    void read() {
-        for (int i = 1; i <= m; i++) {
-            int u, v;
-            cin >> u >> v;
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+vector<int> g[N], tree[N];
+int in[N], low[N], ptr, compID[N];
+int dist[N];
+
+void go(int u, int par = -1) {
+    in[u] = low[u] = ++ptr;
+    for (int v : g[u]) {
+        if (in[v]) {
+            if (v == par)      par = -1;
+            else low[u] = min(low[u], in[v]);
+        } else {
+            go(v, u);
+            low[u] = min(low[u], low[v]);
         }
     }
+}
 
-    void findbriges(int u, int p) {
-        low[u] = dt[u] = ++Time;
-        for (auto v : adj[u]) {
-            if (v == p) continue;
-            if (dt[v]) low[u] = min(low[u], dt[v]);
-            else {
-                findbriges(v, u);
-                if (dt[u] < low[v]) bridges.push_back(pii(u, v));
-                low[u] = min(low[u], low[v]);
-            }
+void shrink(int u, int id) {
+    compID[u] = id;
+    for (int v : g[u])
+        if (!compID[v]) {
+            if (low[v] > in[u]) {
+                tree[id].emplace_back(++ptr);
+                tree[ptr].emplace_back(id);
+                shrink(v, ptr);
+            } else shrink(v, id);
         }
+}
+
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+
+    while (m--) {
+        int u, v;
+        scanf("%d %d", &u, &v);
+        g[u].emplace_back(v);
+        g[v].emplace_back(u);
     }
 
-    map<pii, bool> mp;
-    void Color(int u, int p, int c) {
-        vis[u] = true, col[u] = c;
-        for (auto v : adj[u]) {
-            if (vis[v] || mp[pii(u, v)]) continue;
-            Color(v, u, c);
+    for (int i = 1; i <= n; ++i)
+        if (!in[i]) go(i);
+
+    ptr = 0;
+    for (int i = 1; i <= n; ++i) {
+        if (!compID[i]) {
+            shrink(i, ++ptr);
         }
     }
+}
 
-    int c = 0;
-    void Treeform() {
-        findbriges(1, 0);
-        for (auto [u, v] : bridges) {
-            mp[pii(u, v)] = true;
-            mp[pii(v, u)] = true;
-        }
-
-        for (int i = 1; i <= n; i++) {
-            if (!vis[i]) {
-                Color(i, i, ++c);
-            }
-        }
-
-        for (auto [x, y] : bridges) {
-            tree[col[x]].push_back(col[y]);
-            tree[col[y]].push_back(col[x]);
-        }
-    }
-};
