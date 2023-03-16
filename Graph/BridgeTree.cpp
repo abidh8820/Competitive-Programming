@@ -1,6 +1,6 @@
 /*
 * It could be a forest rather than a single tree. 
-* The 'tree' holds the edges bridge trees' 
+* The 'tree' holds the bridge trees' edges  
 * 'ptr' = the number of new nodes in the bridge tree 
 */
 
