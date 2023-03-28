@@ -1,9 +1,3 @@
-/**
-  Solves SPOJ HORRIBLE - Horrible Queries
-  Range Increment Update, Range Sum Query
-
-  Author: Folklore, Anachor
-**/
 
 #include <bits/stdc++.h>
 #define LL long long
@@ -32,46 +26,40 @@ void build(int u, int st, int en) {
     if (st == en) {
         tr[u] = a[st];  /// 3. Initialize
         lz[u] = 0;
-    } else {
-        int mid = (st + en) / 2;
-        build(2 * u, st, mid);
-        build(2 * u + 1, mid + 1, en);
-        tr[u] = combine(tr[2 * u], tr[2 * u + 1]);
-        lz[u] = 0;  /// 3. Initialize
+        return
     }
+    int mid = (st + en) / 2;
+    build(2 * u, st, mid);
+    build(2 * u + 1, mid + 1, en);
+    tr[u] = combine(tr[2 * u], tr[2 * u + 1]);
+    lz[u] = 0;  /// 3. Initialize
 }
 
 void update(int u, int st, int en, int l, int r, int x) {
     propagate(u, st, en);
-    if (r < st || en < l)
-        return;
-    else if (l <= st && en <= r) {
+    if (r < st || en < l) return;
+    if (l <= st && en <= r) {
         lz[u] += x;  /// 4. Merge lazy
         propagate(u, st, en);
-    } else {
-        int mid = (st + en) / 2;
-        update(2 * u, st, mid, l, r, x);
-        update(2 * u + 1, mid + 1, en, l, r, x);
-        tr[u] = combine(tr[2 * u], tr[2 * u + 1]);
+        return;
     }
+    int mid = (st + en) / 2;
+    update(2 * u, st, mid, l, r, x);
+    update(2 * u + 1, mid + 1, en, l, r, x);
+    tr[u] = combine(tr[2 * u], tr[2 * u + 1]);
+}
 }
 
 LL query(int u, int st, int en, int l, int r) {
     propagate(u, st, en);
-    if (r < st || en < l)
-        return 0;  /// 5. Proper null value
-    else if (l <= st && en <= r)
-        return tr[u];
-    else {
-        int mid = (st + en) / 2;
-        return combine(query(2 * u, st, mid, l, r),
-                       query(2 * u + 1, mid + 1, en, l, r));
-    }
+    if (r < st || en < l) return 0;  /// 5. Proper null value
+    if (l <= st && en <= r) return tr[u];
+    int mid = (st + en) / 2;
+    return combine(query(2 * u, st, mid, l, r), query(2 * u + 1, mid + 1, en, l, r));
 }
 
 void debug(int u, int st, int en) {
-    cout << "--->" << u << " " << st << " " << en << " " << tr[u] << " "
-         << lz[u] << endl;
+    cout << "--->" << u << " " << st << " " << en << " " << tr[u] << " " << lz[u] << endl;
     if (st == en) return;
     int mid = (st + en) / 2;
     debug(2 * u, st, mid);
