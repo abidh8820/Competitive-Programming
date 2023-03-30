@@ -19,9 +19,9 @@ int call(int pos, int mx, int mn, int strict_low, int strict_high, int lead) {
  
     r = 10;
     for (int dig = lo; dig <= hi; dig++) {
-        bool new_sl = strict_low & (dig == L[pos]);
-        bool new_sh = strict_high & (dig == R[pos]);
-        bool new_lead = (lead | (dig > 0));
+        int new_sl = strict_low & (dig == L[pos]);
+        int new_sh = strict_high & (dig == R[pos]);
+        int new_lead = (lead | (dig > 0));
  
         int new_mx = new_lead ? max(dig, mx) : mx;
         int new_mn = new_lead ? min(dig, mn) : mn;
