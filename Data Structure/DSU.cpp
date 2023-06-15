@@ -3,10 +3,14 @@ using namespace std;
 
 const int N = 1e5 + 7;
 
-struct DSU{
-    int par[N];
-    void init() {
-        for (int i = 0; i < N; i++) par[i] = i;
+struct DSU {
+    vector<int> par;
+
+    DSU(){};
+
+    DSU(int n) {
+        par.resize(n + 2);
+        iota(par.begin(), par.end(), 0);
     }
 
     int find(int u) {

@@ -11,7 +11,7 @@ vector<int> order, component;
 
 // tp = 0 ,finding topo order
 // tp = 1 , reverse edge traversal
-//
+
 void dfs(int u, int tp = 0) {
     vis[u] = true;
     if (tp) component.push_back(u);

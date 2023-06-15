@@ -1,57 +1,73 @@
+//solves https://lightoj.com/problem/investigation
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 using LL = long long;
- 
-int L[25], R[25];
-int dp[30][10][10][2][2][2];
+using PII = pair<int, int>;
 
-// lead == 0 , all leading zeros so far 
-//starting from MSB to .. LSB (numbers are reversed)
+int dp[11][2][2][1001][91];
 
-int call(int pos, int mx, int mn, int strict_low, int strict_high, int lead) {
-    if (pos <= 0) return mx - mn;
-    int &r = dp[pos][mx][mn][strict_low][strict_high][lead];
-    if (~r) return r;
- 
-    int lo = strict_low ? L[pos] : 0;
-    int hi = strict_high ? R[pos] : 9;
- 
-    r = 10;
-    for (int dig = lo; dig <= hi; dig++) {
-        int new_sl = strict_low & (dig == L[pos]);
-        int new_sh = strict_high & (dig == R[pos]);
-        int new_lead = (lead | (dig > 0));
- 
-        int new_mx = new_lead ? max(dig, mx) : mx;
-        int new_mn = new_lead ? min(dig, mn) : mn;
-        r = min(r, call(pos - 1, new_mx, new_mn, new_sl, new_sh, new_lead));
+vector<int> L, R;
+
+int call(int pos, bool loose_low, bool loose_hi, int sum, int digsum, int k) {
+    if (pos == R.size()) return (sum == 0 && digsum == 0);
+    int &ret = dp[pos][loose_low][loose_hi][sum][digsum];
+
+    if (~ret) return ret;
+    ret = 0;
+
+    int lo = L[pos], hi = R[pos];
+    if (loose_low) lo = 0;
+    if (loose_hi) hi = 9;
+
+    for (int i = lo; i <= hi; i++) {
+        bool n_loose_hi = loose_hi | (R[pos] > i);
+        bool n_loose_low = loose_low | (i > L[pos]);
+
+        int new_sum = (sum * 10 + i) % k;
+        int new_dsum = (digsum + i) % k;
+
+        ret += call(pos + 1, n_loose_low, n_loose_hi, new_sum, new_dsum, k);
     }
-    return r;
+
+    return ret;
 }
- 
+
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+    int t, cs = 0;
 
-    int t;
     cin >> t;
-
     while (t--) {
-        string a, b;
-        cin >> a >> b;
-
-        reverse(a.begin(), a.end());
-        reverse(b.begin(), b.end());
-
-        memset(L, 0, sizeof L);
-        memset(R, 0, sizeof R);
-
-        for (int i = 1; i <= a.size(); i++) L[i] = a[i - 1] - '0';
-        for (int i = 1; i <= b.size(); i++) R[i] = b[i - 1] - '0';
-
+        cout << "Case " << ++cs << ": ";
         memset(dp, -1, sizeof dp);
-        cout << call(20, 0, 9, 1, 1, 0) << "\n";
+
+        string A, B;
+        int K;
+        cin >> A >> B >> K;
+
+        reverse(A.begin(), A.end());
+        reverse(B.begin(), B.end());
+        int mx = max(A.size(), B.size());
+
+        while (A.size() < mx) A += '0';
+        while (B.size() < mx) B += '0';
+
+        reverse(A.begin(), A.end());
+        reverse(B.begin(), B.end());
+
+        R.resize(mx), L.resize(mx);
+
+        for (int i = 0; i < mx; i++) {
+            R[i] = B[i] - '0';
+            L[i] = A[i] - '0';
+        }
+
+        if (K >= 100) {
+            cout << 0 << "\n";
+            continue;
+        }
+
+        cout << call(0, 0, 0, 0, 0, K) << "\n";
     }
 }
 

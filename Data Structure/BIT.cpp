@@ -1,3 +1,5 @@
+//should be 1-indexed
+
 #include "bits/stdc++.h"
 using namespace std;
 

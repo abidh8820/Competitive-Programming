@@ -5,8 +5,6 @@
     Suffix Array Construction: O(NlogN)
     LCP Array Construction: O(NlogN)
     Suffix LCP: O(logN)
-
- ** Must run PRE();
 **/
 
 #include <bits/stdc++.h>
@@ -89,7 +87,7 @@ int suffixLCP(int i, int j) {
     }
     return ans;
 }
-
+// lcp[i] = lcp(i,i+1);
 VI lcp_construction(const string &s, const VI &sa) {
     int n = s.size();
     VI rank(n, 0);
@@ -126,7 +124,6 @@ struct RMQ {
         N = a.size();
         v[0] = a;
 
-        if(lg[2]==0) pre();
         for (int k = 0; (1 << (k + 1)) <= N; k++) {
             v[k + 1].resize(N);
             for (int i = 0; i - 1 + (1 << (k + 1)) < N; i++) {
@@ -146,9 +143,15 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    string s;
-    cin >> s;
+    int t;
+    cin >> t;
 
-    vector<int> sa = suffix_array_construction(s);
-    for (int i : sa) cout << i << "\n";
+    while (t--) {
+        string s;
+        cin >> s;
+        vector<int> sa = suffix_array_construction(s);
+        VI lcp = lcp_construction(s, sa);
+        int ans = *max_element(lcp.begin(), lcp.end());
+        cout << ans <<endl;
+    }
 }

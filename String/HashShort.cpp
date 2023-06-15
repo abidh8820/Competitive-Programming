@@ -1,27 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 typedef long long LL;
 typedef pair<LL, LL> PLL;
 
-namespace Hashing {
-
-#define ff first
-#define ss second
 
 const PLL M = {1e9 + 7, 1e9 + 9};
-const LL base = 1259;
+const PLL base = {1009, 1007};
 const int N = 1e6 + 7;
 
-PLL operator+(const PLL& a, LL x) { return {a.ff + x, a.ss + x}; }
-PLL operator-(const PLL& a, LL x) { return {a.ff - x, a.ss - x}; }
-PLL operator*(const PLL& a, LL x) { return {a.ff * x, a.ss * x}; }
-PLL operator+(const PLL& a, PLL x) { return {a.ff + x.ff, a.ss + x.ss}; }
-PLL operator-(const PLL& a, PLL x) { return {a.ff - x.ff, a.ss - x.ss}; }
-PLL operator*(const PLL& a, PLL x) { return {a.ff * x.ff, a.ss * x.ss}; }
-PLL operator%(const PLL& a, PLL m) { return {a.ff % m.ff, a.ss % m.ss}; }
-ostream& operator<<(ostream& os, PLL hash) {
-    return os << "(" << hash.ff << ", " << hash.ss << ")";
-}
+PLL operator+(const PLL& a, LL x) { return {a.first + x, a.second + x}; }
+PLL operator*(const PLL& a, LL x) { return {a.first * x, a.second * x}; }
+PLL operator+(const PLL& a, PLL x) { return {a.first + x.first, a.second + x.second}; }
+PLL operator-(const PLL& a, PLL x) { return {a.first - x.first, a.second - x.second}; }
+PLL operator*(const PLL& a, PLL x) { return {a.first * x.first, a.second * x.second}; }
+PLL operator%(const PLL& a, PLL m) { return {a.first % m.first, a.second % m.second}; }
 
 PLL pb[N];
 
