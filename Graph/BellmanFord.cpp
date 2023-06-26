@@ -2,7 +2,9 @@
  * printing negetive cycle
  */
 
-#include "bits/stdc++.h"
+//solves https://cses.fi/problemset/task/1197
+
+#include <bits/stdc++.h>
 using namespace std;
 
 const int N = 3e3 + 7;
@@ -60,4 +62,3 @@ int main() {
     }
 }
 
-//https://cses.fi/problemset/task/1197
