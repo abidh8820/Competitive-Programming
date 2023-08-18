@@ -81,6 +81,8 @@ int query(int u, int v) {
     }
 
     if (depth[u] > depth[v]) swap(u, v);
+
+    //condition only for edge query
     if (u != v) ret = max(ret, query(1, 1, cnt, pos[u] + 1, pos[v]));
     return ret;
 }
@@ -91,6 +93,8 @@ void update(int u, int v) {
         update(1,1,cnt,pos[head[v]], pos[v],1);
     }
     if(depth[u] > depth[v]) swap(u,v);
+
+    //condition only for edge query
     if(u != v) update(1, 1, cnt, pos[u]+1, pos[v],1);
 }
 

@@ -13,10 +13,8 @@ gp_hash_table<int,int> table;
 
 /*
     Operations :
-    find_by_order : returns an iterator to the k-th
-    largest element (counting from zero).
-    order_of_key :  returns the number of items in
-    a set that are strictly smaller than our item.
+    find_by_order : returns an iterator to the k-th element(counting from zero).
+    order_of_key :  returns the number of items in a set that are strictly smaller than our item.
     # to use as a multiset just insert a pair<int,int> with unique second element, change
     int to pair<int,int> in typedef part
 */
