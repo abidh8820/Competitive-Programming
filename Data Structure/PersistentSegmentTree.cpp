@@ -6,7 +6,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using LL = long long ;
+using LL = long long;
 const int N = 4e6 + 7;
 
 struct Node {
@@ -56,65 +56,29 @@ int query(int left, int right, int st, int en, int k) {
     int cnt = tr[tr[right].l].val - tr[tr[left].l].val;
     int mid = (st + en) / 2;
 
-    if (cnt >= k) return query(tr[left].l, tr[right].l, st, mid, k);
-    else      return query(tr[left].r, tr[right].r, mid + 1, en, k-cnt);
+    if (cnt >= k)
+        return query(tr[left].l, tr[right].l, st, mid, k);
+    else
+        return query(tr[left].r, tr[right].r, mid + 1, en, k - cnt);
 }
 
 int V[N], root[N], a[N];
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-
     map<int, int> mp;
     int n, q;
-    cin >> n;
-
+    cin >> n >> q;
     for (int i = 1; i <= n; i++) cin >> a[i], mp[a[i]];
     int c = 0;
-
-    for (auto& [x, y] : mp) y = ++c, V[c] = x;
-    root[0] = build(1, n);
-
+    for (auto x : mp) mp[x.first] = ++c, V[c] = x.first;
+    root[0] = t.build(1, n);
     for (int i = 1; i <= n; i++) {
-        root[i] = update(root[i - 1], 1, n, mp[a[i]], 1);
+        root[i] = t.upd(root[i - 1], 1, n, mp[a[i]], 1);
     }
-
-    cin >> q;
     while (q--) {
-        LL l, r, k;
+        int l, r, k;
         cin >> l >> r >> k;
-
-        LL gg = query(root[l - 1], root[r], 1,n, r-l+1 );
-        LL val = V[gg];
-        LL rem = val-(r-l+1);
-
-        if(rem<k) {
-            cout<<k-rem+val<<"\n";
-            continue;
-        }
-
-        int lo = 1, hi = r-l+1, res = r-l+1;
-        while(lo<=hi){
-            int mid = (lo+hi)>>1;
-            int idx = query(root[l-1], root[r] , 1, n, mid);
-            int VAL = V[idx];
-            int need = VAL-mid;
-            if(need>=k){
-                res = mid, hi = mid -1;
-            }
-            else lo = mid + 1;
-        }
-
-        if(res==1){
-            cout<<k<<"\n";
-            continue;
-        }
-        else {
-           LL gg = query(root[l-1], root[r], 1, n, res-1); 
-           LL val =  V[gg];
-           LL rem = val - (res-1);
-           cout<<k-rem+val<<"\n";
-        }
+        cout << V[t.query(root[l - 1], root[r], 1, n, k)] << '\n';
     }
+    return 0;
 }

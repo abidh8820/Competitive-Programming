@@ -1,4 +1,4 @@
-/* Author : Alpha_Q
+/* 
  * Dynamic ConvexHull Trick - Maximizes f(x)
  * For minimization: insert(-m, -c) and negate the result
  */

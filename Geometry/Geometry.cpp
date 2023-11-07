@@ -143,6 +143,7 @@ namespace Linear {
     // lines are represented as a ray from a point: (point, vector)
     // returns false if two lines (p, v) && (q, w) are parallel or collinear
     // true otherwise, intersection point is stored at o via reference
+
     bool lineLineIntersection(Point p, Point v, Point q, Point w, Point& o) {
         static_assert(is_same<Tf, Ti>::value);
         if(dcmp(cross(v, w)) == 0) return false;
@@ -491,6 +492,7 @@ namespace Convex {
  
     // Tested : https://toph.co/p/cover-the-points
     // Calculate [ACW, CW] tangent pair from an external point
+
     constexpr int CW = -1, ACW = 1;
     bool isGood(Point u, Point v, Point Q, int dir) { return orient(Q, u, v) != -dir; }
     Point better(Point u, Point v, Point Q, int dir) { return orient(Q, u, v) == dir ? u : v; }
@@ -856,6 +858,7 @@ namespace IntersectingSegments {
 }
 namespace HalfPlanar {
     using Linear::lineLineIntersection;
+
     struct DirLine {
         Point p, v;
         Tf ang;

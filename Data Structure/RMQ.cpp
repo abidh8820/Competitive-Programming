@@ -3,6 +3,7 @@ using namespace std;
 
 typedef vector<int> VI;
 
+
 const int MX = 1e6 + 7, K = 20;
 int lg[MX];
 void pre() {
@@ -31,6 +32,8 @@ struct RMQ {
     }
 };
 
+
+//dont forget to call pre
 int main(){
 
     VI a = {1,2,3,4};
