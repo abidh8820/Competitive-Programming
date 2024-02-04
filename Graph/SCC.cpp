@@ -1,13 +1,17 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-typedef long long LL;
+using LL = long long;
+using PII = pair<int,int>;
 const LL N = 1e6 + 7;
 
 bool vis[N];
 
-vector<int> adj[N], adjr[N];
+vector<int> adj[N], adjr[N], g[N];
+//g is the condensed graph
+
 vector<int> order, component;
+vector<PII> edges;
 
 // tp = 0 ,finding topo order
 // tp = 1 , reverse edge traversal
@@ -42,11 +46,23 @@ int main() {
     memset(vis, 0, sizeof vis);
     reverse(order.begin(), order.end());
 
-    for (int i : order) {
+    vector<LL> ID(n + 1);
+
+    LL ptr = 0;
+    for (LL i : order) {
         if (!vis[i]) {
-            // one component is found
-            dfs(i, 1), component.clear();
+            dfs(i, 1);
+            ptr++;
+            for (LL u : component) ID[u] = ptr;
+            sz[ptr] = component.size();
+            component.clear();
         }
+    }
+
+    for (auto [u, v] : edges) {
+        if (!cand[u] or !cand[v]) continue;
+        if (ID[u] == ID[v]) continue;
+        g[ID[u]].push_back(ID[v]);
     }
 }
 

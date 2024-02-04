@@ -24,7 +24,7 @@ vector<int> factorize(int x) {
         while (x % p == 0) x /= p;
         fact.push_back(p);
     }
-    return ret;
+    return fact;
 }
 int main() {
     ios::sync_with_stdio(0);

@@ -1,7 +1,7 @@
 /* 
  * prefix automaton allows insertion to prefix function in O(1) time*
  * Author:lel?
- * /
+ */
 
 #include <bits/stdc++.h>
 using namespace std;
